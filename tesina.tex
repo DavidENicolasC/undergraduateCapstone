@@ -2,26 +2,41 @@
 \usepackage{graphicx}
 \usepackage{float}
 
-	\addtolength{\topmargin}{-1cm}
+	\addtolength{\topmargin}{-4cm}
+	\addtolength{\leftmargin}{-3cm}
     \addtolength{\textheight}{1cm}
 
 
 \begin{document}
 \thispagestyle{empty}
 
-\begin{figure}[h]
-    \includegraphics[width=0.2\textwidth]{recursos/logo-ipn-guinda.png}
+% \noindent\rule{\textwidth}{0.5pt}
+
+\begin{minipage}{0.2\textwidth}
+    \includegraphics[width=\textwidth]{recursos/logo-ipn-guinda.png}
     \hspace{-\textwidth} % Desplaza la imagen a la izquierda
     \vspace{-\topskip}   % Desplaza la imagen hacia arriba
-\end{figure}
+\end{minipage}%
+\begin{minipage}{0.2\textwidth}
+    \vspace{1.5cm} % Ajusta el espacio vertical según sea necesario
+    \noindent\rule{10cm}{0.5pt}
+\end{minipage}%
 
 \begin{figure}[b]
-\includegraphics[width=0.2\textwidth]{recursos/esime.png}
+\includegraphics[width=0.22\textwidth]{recursos/esime.png}
 \end{figure} 
-
 
 \begin{center}
 Control inteligente basado en navegación inercial para brazo robótico
 \end{center}
+
+\newpage
+Indice
+
+\newpage
+Introduccion
+
+\newpage
+Planteamiento del problema
 
 \end{document}
