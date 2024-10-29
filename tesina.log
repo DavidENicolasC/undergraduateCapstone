@@ -1,0 +1,319 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.28)  28 OCT 2024 22:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./tesina.tex
+(tesina.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen143
+\l@unhyphenated=\language79
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
+df
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks18
+\es@quotdepth=\count198
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel
+-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count199
+\l__pdf_internal_box=\box51
+) (tesina.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+\openout1 = `tesina.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count266
+\scratchdimen=\dimen144
+\scratchbox=\box52
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen145
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks22
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+ (C:\Users\David\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\David\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+<./recursos/logo-ipn-guinda.png, id=1, 397.485pt x 614.295pt>
+File: ./recursos/logo-ipn-guinda.png Graphic file (type png)
+<use ./recursos/logo-ipn-guinda.png>
+Package pdftex.def Info: ./recursos/logo-ipn-guinda.png  used on input line 20.
+
+(pdftex.def)             Requested size: 77.99881pt x 120.5416pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 23.
+
+Overfull \hbox (206.52875pt too wide) in paragraph at lines 26--27
+[] 
+ []
+
+<./recursos/esime.png, id=3, 810.02625pt x 724.7075pt>
+File: ./recursos/esime.png Graphic file (type png)
+<use ./recursos/esime.png>
+Package pdftex.def Info: ./recursos/esime.png  used on input line 30.
+(pdftex.def)             Requested size: 85.80048pt x 76.75449pt.
+[1
+
+{C:/Users/David/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./recursos/l
+ogo-ipn-guinda.png> <./recursos/esime.png>] (tesina.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `tesina.toc'.
+
+ [2
+
+]
+<./recursos/brazo.jpg, id=16, 276.28218pt x 184.43906pt>
+File: ./recursos/brazo.jpg Graphic file (type jpg)
+<use ./recursos/brazo.jpg>
+Package pdftex.def Info: ./recursos/brazo.jpg  used on input line 48.
+(pdftex.def)             Requested size: 165.77057pt x 110.66428pt.
+<./recursos/plckaab.png, id=17, 196.0926pt x 92.9874pt>
+File: ./recursos/plckaab.png Graphic file (type png)
+<use ./recursos/plckaab.png>
+Package pdftex.def Info: ./recursos/plckaab.png  used on input line 56.
+(pdftex.def)             Requested size: 196.09212pt x 92.98717pt.
+ [3 <./recursos/brazo.jpg> <./recursos/plckaab.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+
+ []
+
+[4] [5] [6] [7] [8]
+<./recursos/raspberrypi.jpg, id=38, 98.61844pt x 147.55125pt>
+File: ./recursos/raspberrypi.jpg Graphic file (type jpg)
+<use ./recursos/raspberrypi.jpg>
+Package pdftex.def Info: ./recursos/raspberrypi.jpg  used on input line 115.
+(pdftex.def)             Requested size: 49.30908pt x 73.77544pt.
+<./recursos/qt.jpg, id=39, 109.91063pt x 85.06781pt>
+File: ./recursos/qt.jpg Graphic file (type jpg)
+<use ./recursos/qt.jpg>
+Package pdftex.def Info: ./recursos/qt.jpg  used on input line 132.
+(pdftex.def)             Requested size: 54.95517pt x 42.5338pt.
+ [9 <./recursos/raspberrypi.jpg> <./recursos/qt.jpg>]
+<./recursos/i2c.png, id=44, 331.99031pt x 160.34906pt>
+File: ./recursos/i2c.png Graphic file (type png)
+<use ./recursos/i2c.png>
+Package pdftex.def Info: ./recursos/i2c.png  used on input line 149.
+(pdftex.def)             Requested size: 165.99474pt x 80.17433pt.
+<./recursos/spi.png, id=45, 413.29407pt x 105.39375pt>
+File: ./recursos/spi.png Graphic file (type png)
+<use ./recursos/spi.png>
+Package pdftex.def Info: ./recursos/spi.png  used on input line 166.
+(pdftex.def)             Requested size: 206.64651pt x 52.69673pt.
+
+[10 <./recursos/i2c.png> <./recursos/spi.png>]
+<./recursos/mpu6050.jpg, id=51, 100.87688pt x 126.4725pt>
+File: ./recursos/mpu6050.jpg Graphic file (type jpg)
+<use ./recursos/mpu6050.jpg>
+Package pdftex.def Info: ./recursos/mpu6050.jpg  used on input line 189.
+(pdftex.def)             Requested size: 50.43831pt x 63.23608pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+<./recursos/mpu9250.jpg, id=52, 88.83188pt x 147.55125pt>
+File: ./recursos/mpu9250.jpg Graphic file (type jpg)
+<use ./recursos/mpu9250.jpg>
+Package pdftex.def Info: ./recursos/mpu9250.jpg  used on input line 210.
+(pdftex.def)             Requested size: 35.5321pt x 59.01944pt.
+[11 <./recursos/mpu6050.jpg>]
+<./recursos/flexsensor.jpg, id=56, 133.24782pt x 101.62968pt>
+File: ./recursos/flexsensor.jpg Graphic file (type jpg)
+<use ./recursos/flexsensor.jpg>
+Package pdftex.def Info: ./recursos/flexsensor.jpg  used on input line 224.
+(pdftex.def)             Requested size: 79.9493pt x 60.97827pt.
+<./recursos/mcp3004.jpg, id=57, 100.87688pt x 101.62968pt>
+File: ./recursos/mcp3004.jpg Graphic file (type jpg)
+<use ./recursos/mcp3004.jpg>
+Package pdftex.def Info: ./recursos/mcp3004.jpg  used on input line 237.
+(pdftex.def)             Requested size: 60.52658pt x 60.97827pt.
+<./recursos/servomotor.png, id=58, 130.4875pt x 130.4875pt>
+File: ./recursos/servomotor.png Graphic file (type png)
+<use ./recursos/servomotor.png>
+Package pdftex.def Info: ./recursos/servomotor.png  used on input line 254.
+(pdftex.def)             Requested size: 78.29309pt x 78.29309pt.
+ [12 <./recursos/mpu9250.jpg> <./recursos/flexsensor.jpg> <./recursos/mcp3004.j
+pg>] [13 <./recursos/servomotor.png>] [14]
+[15] (tesina.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 3491 strings out of 474485
+ 61649 string characters out of 5743733
+ 1930542 words of memory out of 5000000
+ 25757 multiletter control sequences out of 15000+600000
+ 562959 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 61i,7n,69p,514b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\David\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/David/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/David/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><C:/Users/David/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb>
+Output written on tesina.pdf (15 pages, 567660 bytes).
+PDF statistics:
+ 92 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+
