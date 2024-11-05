@@ -1,55 +1,168 @@
-\documentclass[12pt]{report}
-\usepackage{graphicx}
-\graphicspath{ {./recursos/} }
-\usepackage[spanish]{babel}
+\documentclass[12pt, twoside]{report}
+\usepackage{blindtext}
 \usepackage[utf8]{inputenc}
-
-
-
-%	\addtolength{\topmargin}{2cm}
-%    \addtolength{\textheight}{1cm}
-
-\renewcommand*\contentsname{Indice}
+\usepackage{graphicx}
+\graphicspath{{recursos/}}
+\usepackage{float}
+\usepackage[letterpaper,width=150mm,top=20mm,bottom=20mm,left=24mm,right=24mm,bindingoffset=0mm]{geometry}
+\usepackage[section]{placeins}
+\usepackage{booktabs}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{tikz} 
+\usepackage{tocloft}
+\usepackage{setspace}
+%\usepackage{apacite}
+%\usepackage{natbib}
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={(},close={)}}
+\usepackage{filecontents}
+\usepackage[nottoc]{tocbibind}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage{acro}
+\usepackage{dsfont}
+\usepackage{lastpage}
+\usepackage{makecell}
+\usepackage{tasks}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Control inteligente basado en navegación inercial para un brazo robótico articulado}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[CO,CE]{Nicolas Castañeda David Emmanuel}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt} 
+\usepackage{amsmath}
+\usepackage{amssymb,amsthm,listings}
+\usepackage{braket,lipsum,titlesec}
+\usepackage{cleveref,setspace}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\usepackage{dcolumn}
+\newcolumntype{d}{D{-}{-}{0}}
+\usepackage{xcolor}
+\definecolor{Sepia}{RGB}{111,78,55}
+\definecolor{Black}{RGB}{0,0,0}
+\usepackage{setspace}
+\usepackage{makeidx}
+\makeindex
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{cite}
+\usepackage{gensymb}
 
 \begin{document}
-% \thispagestyle{empty}
 
-% \noindent\rule{\textwidth}{0.5pt}
+\newgeometry{top=10mm,bottom=5mm,left=0mm,right=0mm}
 
-\begin{minipage}{0.2\textwidth}
-    \includegraphics[width=\textwidth]{logo-ipn-guinda.png}
-    \hspace{-\textwidth} % Desplaza la imagen a la izquierda
-    \vspace{-\topskip}   % Desplaza la imagen hacia arriba
-\end{minipage}%
-\begin{minipage}{0.2\textwidth}
-    \vspace{1.5cm} % Ajusta el espacio vertical según sea necesario
-    \noindent\rule{10cm}{0.5pt}
-\end{minipage}%
+\thispagestyle{empty}
+        \begin{minipage}[c][0.17\textheight][c]{0.22\textwidth}
+	\begin{center}
+        		\includegraphics[scale=0.25]{logo-ipn-guinda.png}
+	\end{center}
+        \end{minipage}
+        \begin{minipage}[c][0.195\textheight][c]{0.71\textwidth}
+            \begin{center}
+                \vspace{0.3cm}
+                \textbf{\textsc{\Large INSTITUTO POLIT\'ECNICO NACIONAL}}
+                \vspace{0.4cm}
+               \color{Black}\hrule height1pt
+                \vspace{0.2cm}
+               {\color{Black}\hrule height1pt}
+                \vspace{0.4cm}
+                \color{Black}\textbf{\textsc{ESCUELA SUPERIOR DE INGENIER\'IA MEC\'ANICA Y EL\'ECTRICA}}
+                \textbf{\textsc{Unidad Culhuac\'an\\}}
+                \textsc{Ingenier\'ia en Computaci\'on}\\[0.5cm] %
+            \end{center}
+        \end{minipage}
 
-\begin{figure}[b]
-\includegraphics[width=0.22\textwidth]{esime.png}
-\end{figure} 
+        \begin{minipage}[c][0.81\textheight][t]{0.22\textwidth}
+            \begin{center}
+               \color{Black}\vrule width1pt height16cm 
+                \vspace{5mm}
+                \hskip2pt
+                \color{Black}\vrule width1pt height16cm
+                \hskip2mm
+                \color{Black}\vrule width1pt height16cm \\
+                \includegraphics[scale=0.14]{recursos/esime.png}
+            \end{center}
+        \end{minipage}
+        \begin{minipage}[c][0.70\textheight][t]{0.7\textwidth}
+            \begin{center}
+                \vspace{1.5cm}
 
-\begin{Huge}
-	Control inteligente basado en navegación inercial para brazo robótico
-\end{Huge}
+                {\Huge\scshape Control inteligente basado en navegaci\'on inercial para un brazo rob\'otico articulado}
+
+                \vspace{3.5cm}            
+
+               \textsc{\LARGE T E S I N A}\\[0.5cm]
+                \textsc{\large que para obtener el t\'itulo de}\\[0.5cm]
+                \textsc{\large Ingeniero en Computaci\'on}\\[0.5cm]
+                \textsc{\large presenta}\\[0.5cm]
+                \textsc{\large Nicolas Castañeda David Emmanuel}\\[2cm]          
+
+                \vspace{1cm}
+
+          \end{center}
+
+                {\large\scshape Asesores:\\[0.3cm] {M. en C. Jos\'e Antonio Loaiza Brito\\ 
+		Ing. Enrique Cisneros Sedano}}
+
+                \vspace{0.5cm}
+
+            \begin{flushright}
+                \large{Ciudad de México, 16 de enero de 2024}
+            \end{flushright}
+        \end{minipage}
+
+\restoregeometry
+
+\onehalfspacing
 
 \newpage
+\thispagestyle{empty}
+\textbf{\Huge Agradecimientos}
+\vspace{1cm}
 
+Agradezco a mi asesor, José Antonio Loaiza Brito, por permitirme trabajar en un proyecto donde adquirí invaluables habilidades para aplicarlas en el desarrollo de mi carrera, y por guiar el trabajo para alcanzar el objetivo, que fue la titulación.\\
+También agradezco a la empresa Sistemas Eléctricos de Potencia Computarizada (SEDPC), por los recursos económicos y materiales y la asesoría prestada para el desarrollo de este trabajo. En particular, quiero agradecer a los ingenieros Enrique Cisneros Sedano, Marco Emmanuel Toledano Polanco e Israel Flores Romero, quienes fueron responsables directos de mi proyecto y me sugirieron herramientas para llevar adelante el proyecto.
+
+\newpage
+\thispagestyle{empty}
+\textbf{\Huge Dedicatoria}
+\vspace{1cm}
+
+A mi incansable madre Fanny, que con su trabajo, su disciplina, sus consejos y su impulso me llevaron por el camino para completar mis estudios.\\
+A mi hermana Mia Belén, la compañera con la que compartí los sinsabores y los triunfos de la vida por todos estos años.\\
+A mi pareja, Ana, que me acompañó hasta el cansancio y me apoyó en todas las visitas a la empresa, durante el desarrollo de este trabajo.\\
+A mis tíos Eder y Víctor, y mi abuela Violeta, que me apoyaron desde el momento en el que decidí estudiar en el Politécnico, y que a pesar de la pandemia, nunca se negaron a hacerlo.\\
+Gracias por guiar mi vida, y ser el motivo de mi superación.
+
+\newpage
+\renewcommand{\contentsname}{\'Indice}
 \tableofcontents
 
 \newpage
-\section*{Introduccion}
+\chapter{Anteproyecto}\index{Anteproyecto}
 
-Los brazos robóticos articulados son sistemas mecánicos con articulaciones rotativas, diseñados para replicar funciones del brazo humano, incluyendo movimientos de rotación y alcance. Suelen tener una pieza en el extremo del robot llamado efector final (Fig. 1), que realiza la función del robot en el entorno (soldar, manipular objetos, etc.). Cada unión en las articulaciones representa un grado de libertad (DoF) [1].
+\section{Introducci\'on}
+
+Los brazos robóticos articulados son sistemas mecánicos con articulaciones rotativas, diseñados para replicar funciones del brazo humano, incluyendo movimientos de rotación y alcance. Suelen tener una pieza en el extremo del robot llamado efector final, como se muestra en la Figura \ref{fig:brazoR}, que realiza la función del robot en el entorno (soldar, manipular objetos, etc.). Cada unión en las articulaciones representa un grado de libertad (DoF).
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.6]{brazo.jpg}
 	\caption{Partes de un brazo robótico articulado de 3 DoF}
+	\label{fig:brazoR}
 \end{figure}
 
-Sistemas Eléctricos de Potencia Computarizada (SEPDC) es una empresa mexicana que se dedica a fabricar la serie Kaab (Fig. 2) de Controladores Lógicos Programables (PLC), computadoras especializadas para la automatización industrial (tienen inmunidad al ruido eléctrico y resistencia a la vibración y al impacto). Cada uno de ellos puede ser operado de forma remota a través de un software llamado SettDev. Dichos PLCs pueden ser empleados para controlar sistemas críticos.
+Sistemas Eléctricos de Potencia Computarizada (SEPDC) es una empresa mexicana que se dedica a fabricar la serie Kaab (Fig. 2) de Controladores Lógicos Programables (PLC), computadoras especializadas para la automatización industrial (tienen inmunidad al ruido eléctrico y resistencia a la vibración y al impacto). Cada uno de ellos puede ser operado de forma remota a través de un software llamado SettDev.
 
 \begin{figure}[htb]
 	\centering
@@ -57,20 +170,22 @@ Sistemas Eléctricos de Potencia Computarizada (SEPDC) es una empresa mexicana q
 	\caption{PLC-Kaab fabricado por SEDPC}
 \end{figure}
 
+Dichos PLCs pueden ser empleados para controlar sistemas críticos, como se muestra en la Figura .
+
 \newpage
-\section*{Planteamiento del problema}
+\section{Planteamiento del problema}
 
 Los brazos robóticos se han introducido rápidamente en la industria, sin embargo, aún existen desafíos para posicionar de manera precisa el brazo robótico que dificultan su introducción en industrias como la textil, sobre todo cuando dicho posicionamiento tiene que realizarse de manera autónoma [2].
 \newline\newline\newline
 Ubicar las articulaciones de un brazo para llegar a una posición deseada es un problema clásico de la robótica llamado cinemática inversa. Existen métodos algebraicos, geométricos e iterativos para resolverlo, sin embargo, dependen de la cantidad de grados de libertad del robot, además de que consumen una gran cantidad de recursos computacionales, lo que dificulta su uso en un sistema crítico [3].
 
 \newpage
-\section*{Objetivo general}
+\section{Objetivo general}
 
 Desarrollar e implementar un sistema crítico de control, por medio de una Raspberry Pi, sensores inerciales y una red neuronal entrenada con aprendizaje no supervisado, para controlar la posición del efector final de un brazo robótico.
 
 \newpage
-\section*{Objetivos específicos}
+\section{Objetivos específicos}
 \begin{itemize}
 	
 \item Desarrollar e implementar un programa en C++, utilizando los ángulos de inclinación en los tres ejes obtenidos por los sensores MPU6050, para determinar la posición del sensor en el extremo de la ortesis de brazo.
@@ -87,27 +202,61 @@ Desarrollar e implementar un sistema crítico de control, por medio de una Raspb
 
 \end{itemize}
 \newpage
-\section*{Justificacion}
+\section{Justificacion}
 
 El sistema permitirá implementar un nuevo método para resolver la cinemática directa de forma trigonométrica a través de la navegación inercial, además de implementar un método que no dependa de la cantidad de grados de libertad del robot. Asimismo, será una aplicación práctica de las investigaciones previas a este trabajo sobre redes neuronales para el control de un brazo robótico.
 
 \newpage
-\section*{Estado del arte}
+\section{Estado del arte}
+
+\begin{table}[htb]
+    \caption{Estado del arte}
+    \centering
+    \begin{tabular}{p{3.8cm}p{3.8cm}p{3.8cm}p{3.8cm}}
+        \textbf{Título} & \textbf{Autores} & \textbf{Tipo de publicación, lugar y fecha} & \textbf{Descripción} \\ 
+        \midrule
+        FIKA: A Conformal Geometric Algebra Approach to a Fast Inverse Kinematics Algorithm for an Anthropomorphic Robotic Arm \newline\newline
+        FIKA: Un enfoque de álgebra geométrica conforme para un eficaz algoritmo cinemático inverso para un brazo robótico antropomórfico &  
+        Oscar Carbajal-Espinosa; Leobardo Campos-Macías; Miriam Díaz-Rodríguez \newline\newline
+        Instituto Tecnológico y de Estudios Superiores de Monterrey; Intel Corporation; Tecnológico Nacional de México & 
+        \begin{center}Artículo \par \includegraphics[width=3cm]{mexico.jpg} \par Mexico \par 2024\end{center} & 
+        Propone un método geométrico iterativo de 3 fases para resolver el problema de la cinemática inversa.\newline\newline
+        Sin embargo, requiere un tiempo de procesamiento de datos inaceptable en un sistema crítico.\\
+        \midrule
+        Implementation of singularity-free inverse kinematics for humanoid robotic arm using Bayesian optimized deep neural network. \newline\newline
+        Implementación de cinemática inversa sin singularidad para brazo robótico humanoide utilizando una red neuronal profunda optimizada por métodos Bayesianos. &  
+        Omur Aydogmus; Gullu Boztas \newline\newline 
+        Firat University & 
+        \begin{center}Artículo \par \includegraphics[width=3cm]{turquia.png} \par Turquía \par 2024\end{center} & 
+        Utiliza una red neuronal basada en aprendizaje profundo para resolver la cinemática inversa en una simulación.\newline\newline Sin embargo, el proyecto no se llevó a una aplicación práctica. \\
+    \end{tabular}
+\end{table}
 
 \newpage
-\section*{Marco teorico}
+\begin{table}[htb]
+    \caption{Estado del arte (continuación)}
+    \centering
+    \begin{tabular}{p{3.8cm}p{3.8cm}p{3.8cm}p{3.8cm}}
+        \textbf{Título} & \textbf{Autores} & \textbf{Tipo de publicación, lugar y fecha} & \textbf{Descripción} \\ 
+        \midrule
+        Inverse kinematics solution and control method of 6-degree-of-freedom manipulator based on deep reinforcement learning. \newline\newline
+        Solución de cinemática inversa y método de control de un manipulador de 6 grados de libertad basado en aprendizaje de refuerzo profundo. &  
+        Chengyi Zhao; Yimin Wei; Junfeng Xiao; Yong Sun; Dongxing Zhang; Qiuquan Guo; Jun Yang \newline\newline 
+        University of Electronic Science and Technology of China & 
+        \begin{center}Artículo \par \includegraphics[width=3cm]{china.png} \par China \par 2024\end{center} & 
+        Propone un algoritmo de aprendizaje por refuerzo que calcula la distancia entre el efector final y la posición deseada. \newline\newline Sin embargo, se volverá ineficaz cuando se adapte a brazos de diferente longitud. \\
+    \end{tabular}
+\end{table}
+
+\newpage
+\section{Marco teórico}
 
 \subsection*{Raspberry Pi 3 B+}
 \begin{itemize}
-
 	\item Funciona con un sistema operativo basado en la arquitectura ARM.
-	
 	\item Módulo Wi-Fi de banda dual de 2,4 y 5 GHz.
-	
 	\item 40 pines Entrada/Salida de Propósito General (GPIO)
-	
 	\item Salidas de 3.3 y 5 V, buses I²C, SPI
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -118,13 +267,9 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{Qt}
 \begin{itemize}
-	
 	\item Optimizada para aplicaciones con interfaces gráficas en sistemas embebidos.
-	
 	\item Soporte para C++
-	
 	\item Utiliza el lenguaje declarativo QML para programar la interfaz
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -135,13 +280,9 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{Bus I2C}
 \begin{itemize}
-	
 	\item Bus serial de comunicación de tipo maestro-esclavo.
-	
 	\item Línea serial de datos bidireccional (SDA)  y línea serial de reloj (SCL).
-	
 	\item Espacio de direcciones, cada dirección identifica a un dispositivo conectado al bus.
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -152,13 +293,9 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{Bus SPI}
 \begin{itemize}
-	
 	\item Bus serial de comunicación de tipo maestro-esclavo.
-	
 	\item Líneas de entrada al esclavo (MOSI) y salida al esclavo (MISO), línea de reloj (SCLK).
-	
 	\item Línea de selección del chip (SS).
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -169,19 +306,12 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{MPU-6050}
 \begin{itemize}
-	
 	\item Giroscopio de vibración de Coriolis y acelerómetro de 3 ejes.
-	
 	\item Procesador de movimiento digital (DMP) que mide la orientación del sensor en tres ejes.
-	
 	\item Buffer FIFO interno.
-	
 	\item Filtro paso bajo.
-	
 	\item Comunicación por medio del bus I²C de hasta 400 KHz.
-	
-	\item Solo puede tomar las direcciones 0x68 y 0x69.
-	
+	\item Pin AD0 para cambiar la dirección en el bus. Solo puede tomar las direcciones 104 y 105.
 \end{itemize}
 
 \begin{figure}[htb]
@@ -192,17 +322,11 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{MPU-9250}
 \begin{itemize}
-	
 	\item Giroscopio de vibración de Coriolis y acelerómetro de 3 ejes.
-	
 	\item Procesador de movimiento digital (DMP) que mide la orientación del sensor en tres ejes.
-	
 	\item Buffer FIFO interno.
-	
 	\item Filtro paso bajo.
-	
-	\item Comunicación por medio del bus SPI de hasta 10 MHz. \newline\newline
-	
+	\item Comunicación por medio del bus SPI de hasta 10 MHz.
 \end{itemize}
 
 \begin{figure}[htb]
@@ -213,10 +337,8 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{Sensor flexible capacitivo}
 \begin{itemize}
-	
 	\item Mide el ángulo de torsión al que se somete el sensor en una dirección.
 	\item El valor medido es una resistencia variable
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -227,9 +349,7 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{Convertidor analógico-digital MCP3004}
 \begin{itemize}
-	
 	\item Voltaje de referencia de 2,7 V a 5,5 V
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -240,13 +360,9 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 
 \subsection*{Microservomotor posicional}
 \begin{itemize}
-	
 	\item Ángulo de entrada de 0° a 180°
-	
 	\item Utiliza señales de modulación de ancho de pulso (PWM)
-	
 	\item Movimiento bidireccional
-	
 \end{itemize}
 
 \begin{figure}[htb]
@@ -256,13 +372,147 @@ El sistema permitirá implementar un nuevo método para resolver la cinemática 
 \end{figure}
 
 \newpage
-\section*{Propuesta de solución}
+\section{Propuesta de solución}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.85]{fasecaptura.png}
+	\caption{Etapa de captura de datos}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.85]{faseejecucion.png}
+	\caption{Fase de ejecución}
+\end{figure}
 
 \newpage
-\section*{Desarrollo}
+\chapter{Desarrollo del proyecto}
 
-\subsection*{Sensado}
-El algoritmo para obtener los ángulos de inclinación es el que se muestra a continuación.
+\section{Fase de captura de datos}
+\subsection{Sensado}
+
+La empresa requirió que se utilizara una ortesis de brazo donde se montara el sistema de medición de los sensores inerciales y la Raspberry Pi. La Figura \ref{fig:ortesis} muestra la ortesis de brazo utilizada.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.15]{ortesis.jpg}
+	\caption{Ortesis utilizada para el proyecto}
+	\label{fig:ortesis}
+\end{figure}
+
+Se realizó la conexión entre los sensores MPU y la Raspberry Pi 3 B+. La Figura \ref{fig:diagrama} muestra el diagrama de conexión entre los sensores y la Raspberry Pi. Los pines SDA y SCL de los sensores MPU-6050 se conectaron al bus serial $I^2C$, mientras que los pines MISO, MOSI, SCK y SS del sensor MPU-9250 se conectaron al bus serial SPI.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.6]{diagrama.png}
+	\caption{Diagrama de interconexión entre la Raspberry Pi y los sensores}
+	\label{fig:diagrama}
+\end{figure}
+
+Nótese que tanto las líneas de datos (SDA), como las líneas de reloj (SCL) de los sensores MPU-6050, se conectaron a una única línea SDA o SCL, respectivamente, hacia la Raspberry Pi. Para evitar problemas de sincronización, se eligió la misma frecuencia de reloj para ambos sensores. Nótese también que se alimentó al sensor a través de la entrada AD0, en vez de VCC. Esto permite que su dirección en el bus $I^2C$ cambie de 104 a 105. Todos los sensores se alimentaron a través de la salida de voltaje de 3,3 V de la Raspberry Pi.
+
+En lo que resta del documento, cuando se haga referencia a los sensores MPU-6050 y MPU-9250 en conjunto, se utilizará el prefijo MPU; cuando se haga referencia solo a uno de ellos, se hará con su nombre completo.
+
+\subsubsection{Calibración}
+
+Los sensores inerciales fabricados con tecnología MEMS, como los MPU, necesitan ser calibrados y tener un valor de referencia (offset) con el cual se corrija la orientación medida por el sensor \cite{offsetMPU}. El diagrama de la Figura \ref{fig:salidaMPU} obtenido del manual \cite{offsetMPU} muestra el proceso para obtener datos de los sensores MPU; los valores de referencia del acelerómetro y el giroscopio (Gyro and Accel Offset Registers) se aplican a las mediciones obtenidas por el giroscopio y el acelerómetro (Gyro and Accel MEMS), antes de colocar dichos valores en los registros del sensor (Gyro/Accel Output Registers), o ser procesados por el Procesador de Movimiento Digital (DMP) y el buffer FIFO.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.8]{salidaMPU.png}
+	\caption{Lectura de datos de los sensores MPU}
+	\label{fig:salidaMPU}
+\end{figure}
+
+La Figura \ref{fig:ejes} muestra los ejes de desplazamiento y la rotación de los sensores MPU. Se colocaron los sensores MPU en la ortesis de modo que el sentido positivo del eje X quedara hacia el frente del operador (quien tiene colocada la ortesis); de acuerdo con esto, el sentido positivo de rotación en el eje Z se obtiene girando el brazo hacia la izquierda del operador; el sentido positivo de rotación en el eje Y se obtiene girando el brazo hacia abajo; y el sentido positivo de rotación en el eje X se obtiene rotando el brazo hacia la derecha.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{ejes.jpeg}
+	\caption{Orientación de los ejes y polaridad de rotación de los sensores MPU}
+	\label{fig:ejes}
+\end{figure}
+
+Se eligieron los valores de referencia de modo que la salida del sensor en el inicio del proceso de medir la orientación fuera $X=0, Y=0, Z=0$ para el giroscopio y $X=0, Y=0, Z=-9.8$ para el acelerómetro, debido a la constante de la aceleración de la gravedad g = -9.8  $m/s^2$. De acuerdo con lo anterior, al procesar los datos por el DMP, la salida deseada en el inicio del proceso de medir la orientación sería $\theta_x = 0°,\theta_y = 0°,\theta_z = 0°$.
+
+Si el sensor se encuentra en estado de reposo (no existe ninguna fuerza externa que lo mueva), se espera que al leer datos de él, los valores no cambien; en la práctica, estos valores pueden variar debido a interferencias como el ruido externo. De modo que se calcula un valor medio cuyo error (la diferencia entre la medición del sensor en estado de reposo y el valor medio) sea menor que un error máximo aceptable; con base en la experiencia, se eligió un error máximo de 0.1 $\degree/s$ para el giroscopio, y 0.1 $m/s$ para el acelerómetro.
+
+Para obtener dicho valor medio, se utilizó un control proporcional-integral (PI), en el cual se escribe el valor medido por el sensor en los registros de referencia (offset registers), y se compara dicho valor con la siguiente medición del sensor (con el último offset escrito en los registros de referencia aplicado a la nueva medición), para determinar el error; este proceso termina cuando el error obtenido se encuentra dentro del rango previamente establecido.
+
+La Figura \ref{fig:calibracion} muestra el proceso de calibración del sensor. A cada medición se le aplicó el control PI para corregir el error. Para permitir que se establezca un valor apropiado, este proceso se repite 600 veces, un valor elegido basado en la experiencia. Después de que termina el ciclo, se compara el siguiente valor del sensor con los valores de referencia en los registros para determinar el error. Si éste es mayor que el error máximo aceptado, se repite el proceso.
+
+Para que la calibración sea adecuada y se obtenga una medición confiable, el sensor debe de encontrarse en el estado de reposo mencionado anteriormente.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{calibracion.png}
+	\caption{Diagrama a bloques del proceso de calibración del sensor}
+	\label{fig:calibracion}
+\end{figure}
+
+Se utilizó un patrón de arquitectura de segmentación de procesos (process pipeline), en el cual los datos obtenidos del DMP se colocan en un buffer interno del sensor de tipo FIFO (El primer dato que entra, es el último que sale), del cual se lee la orientación del sensor; esto permite que los datos de la orientación puedan ser procesados sin que existan errores debido a lecturas incompletas. Aunque no se indica explícitamente la estructura de datos interna del buffer, se puede representar como un buffer compartido, esto es, una cola circular. La Figura \ref{fig:buffer} muestra el buffer compartido. Puede notarse que se modela de tal manera que el proceso productor (el DMP) y el proceso consumidor (la lectura de datos del sensor) no accedan al mismo valor.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{buffer.png}
+	\caption{Representación del buffer interno del MPU como un buffer compartido}
+	\label{fig:buffer}
+\end{figure}
+
+Posteriormente, se debe de cargar el firmware del procesador \cite{userguideMotionDriver}. Este proceso debe de realizarse cada vez que se encienda el sensor. Aunque no se indique explícitamente, el hecho de que el firmware deba de ser cargado cada vez que se inicie el sensor sugiere que la memoria que contiene el firmware del sensor es una memoria volátil. La memoria está formada por 8 bancos, en los que se carga el firmware proporcionado por InvenSense \cite{userguideMotionDriver}. 
+
+Después de esto, se habilita el DMP y el buffer FIFO escribiendo el valor 1 en el bit FIFO\_EN (bit 6) del registro 106 indicados en las Figuras \ref{fig:fifoen} para la lectura de datos.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=1]{fifoenable.png}
+	\caption{Registro User Control del MPU, donde se encuentra el bit (Bit6) para activar el buffer FIFO}
+	\label{fig:fifoen}
+\end{figure}
+
+\subsubsection{Medición}
+
+El algoritmo utilizado por el DMP para obtener la orientación, no es de dominio público; en el Capítulo \ref{cap:anexos}, se describe el posible algoritmo utilizado por el DMP. Por otro lado, InvenSense, el desarrollador del sensor, ofrece un conjunto de bibliotecas para trabajar con el DMP \cite{userguideMotionDriver}.
+
+El DMP utiliza cuaterniones para representar internamente la orientación; Estos son rápidamente computables y evitan problemas que se producen al girar más de 90°, como el bloqueo del cardán.
+
+El cuaternión \cite{cuaternion} es de la forma:.
+
+\begin{equation}
+q = a + b\hat{i} + c\hat{j} + d\hat{k}
+\label{eq:eqcuaternion}
+\end{equation}
+
+La Figura muestra el proceso general para obtener la orientación del sensor. Primero, se obtiene el cuaternión medido por el DMP del buffer FIFO. Posteriormente, se obtiene el vector de gravedad; este permite calcular la aceleración de la gravedad que experimenta el sensor en los 3 ejes, para tomarlo como sesgo y corregir la medición. Por último, se convierte lo antes calculado a valores de Euler, en radianes, y finalmente, dichos valores son convertidos a su equivalente en grados, que son los que se utilizan para indicar la orientación del sensor.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=1]{fifoenable.png}
+	\caption{Determinación de la orientación del sensor}
+	\label{fig:orientacion}
+\end{figure}
+
+El vector de gravedad se determina como lo indica la ecuación :
+
+Para obtener la orientación de los sensores MPU en los tres ejes en radianes, se utilizan las ecuaciones :
+
+Los valores antes obtenidos son convertidos a su equivalente en grados, como lo indican las ecuaciones : 
+
+\subsection{Localización}
+
+Para obtener la posición (x, y, z) en el espacio, se utilizan las
+
+\newpage
+\chapter{Resultados}
+
+\newpage
+\renewcommand{\bibname}{Referencias}
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\newpage
+\chapter{Anexos}\label{cap:anexos}
 
 % Fin del documento
 \end{document}
