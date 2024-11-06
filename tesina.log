@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.30)  5 NOV 2024 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.30)  5 NOV 2024 23:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,6 +837,29 @@ Package: gensymb 2022/10/17 v1.0.2 (KJH)
 ) (./tesina.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
+
+(./agradecimientos.aux) (./anteproyecto/planteamiento.aux)
+(./anteproyecto/objetivos.aux) (./anteproyecto/justificacion.aux)
+(./anteproyecto/estadodelarte.aux) (./anteproyecto/marco.aux)
+(./anteproyecto/propuesta.aux)
+
+LaTeX Warning: Label `eq:angulox' multiply defined.
+
+
+LaTeX Warning: Label `eq:angulox@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:angulox' multiply defined.
+
+
+LaTeX Warning: Label `eq:angulox@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:angulox' multiply defined.
+
+
+LaTeX Warning: Label `eq:angulox@cref' multiply defined.
+
 )
 \openout1 = `tesina.aux'.
 
@@ -854,8 +877,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
-
-(c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count373
 \scratchdimen=\dimen311
@@ -1000,13 +1022,7 @@ Package pdftex.def Info: recursos/esime.png  used on input line 32.
 
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./recursos/logo
--ipn-guinda.png> <./recursos/ESIME.png>]) (./agradecimientos.tex
-
-[2
-
-])
-
-[3] (./tesina.toc
+-ipn-guinda.png> <./recursos/ESIME.png>]) (./tesina.toc
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
@@ -1015,34 +1031,65 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 
-[4]
+[2
+
+]
 Cap\'{\i }tulo 1.
 (./anteproyecto/introduccion.tex
-<recursos/brazo.jpg, id=26, 276.28218pt x 184.43906pt>
+<recursos/brazo.jpg, id=20, 276.28218pt x 184.43906pt>
 File: recursos/brazo.jpg Graphic file (type jpg)
 <use recursos/brazo.jpg>
 Package pdftex.def Info: recursos/brazo.jpg  used on input line 7.
 (pdftex.def)             Requested size: 165.77057pt x 110.66428pt.
-<recursos/plckaab.png, id=27, 196.0926pt x 92.9874pt>
+
+
+[3
+
+ <./recursos/brazo.jpg>]
+<recursos/plckaab.png, id=24, 196.0926pt x 92.9874pt>
 File: recursos/plckaab.png Graphic file (type png)
 <use recursos/plckaab.png>
-Package pdftex.def Info: recursos/plckaab.png  used on input line 16.
-(pdftex.def)             Requested size: 196.09212pt x 92.98717pt.
-) (./anteproyecto/planteamiento.tex
+Package pdftex.def Info: recursos/plckaab.png  used on input line 17.
+(pdftex.def)             Requested size: 176.4817pt x 83.68788pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4 <./recursos/plckaab.png>]
+\openout2 = `anteproyecto/planteamiento.aux'.
+
+ (./anteproyecto/planteamiento.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 3--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--75
+
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5
 
- <./recursos/brazo.jpg>])
-Underfull \hbox (badness 10000) in paragraph at lines 4--76
+]
+\openout2 = `anteproyecto/objetivos.aux'.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--76
-
- []
-
-(./anteproyecto/objetivos.tex
+ (./anteproyecto/objetivos.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1052,7 +1099,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6 <./recursos/plckaab.png>]
+[6
+
+
+
+])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1062,7 +1113,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]) (./anteproyecto/justificacion.tex
+[7]
+\openout2 = `anteproyecto/justificacion.aux'.
+
+ (./anteproyecto/justificacion.tex)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1072,208 +1126,205 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]) (./anteproyecto/estadodelarte.tex
+[8
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+]
+\openout2 = `anteproyecto/estadodelarte.aux'.
 
-[9]
-Underfull \hbox (badness 1314) in paragraph at lines 8--8
+ (./anteproyecto/estadodelarte.tex
+Underfull \hbox (badness 1314) in paragraph at lines 7--7
 []|\OT1/cmr/bx/sc/12 Tipo de pu-bli-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 Geo-me-tric Al-ge-bra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 In-ver-se Ki-ne-ma-tics
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 Al-go-rithm for an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 Anth-ro-po-morphic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 10--11
+Underfull \hbox (badness 3128) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 FIKA: Un en-fo-que
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 ca con-for-me pa-ra
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 10--11
+Underfull \hbox (badness 1762) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 un efi-caz al-go-rit-mo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 \OT1/cmr/m/n/12 ci-nem^^Sati-co in-ver-so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 []|\OT1/cmr/m/n/12 Oscar Carbajal-
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 12--13
+Underfull \hbox (badness 6252) in paragraph at lines 11--12
 \OT1/cmr/m/n/12 Espinosa; Leo-bar-do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 \OT1/cmr/m/n/12 In-tel Cor-po-ra-tion;
  []
 
-<recursos/mexico.jpg, id=45, 210.5466pt x 118.7637pt>
+<recursos/mexico.jpg, id=42, 210.5466pt x 118.7637pt>
 File: recursos/mexico.jpg Graphic file (type jpg)
 <use recursos/mexico.jpg>
-Package pdftex.def Info: recursos/mexico.jpg  used on input line 14.
+Package pdftex.def Info: recursos/mexico.jpg  used on input line 13.
 (pdftex.def)             Requested size: 85.35826pt x 48.14977pt.
 
-Underfull \hbox (badness 2376) in paragraph at lines 15--17
+Underfull \hbox (badness 2376) in paragraph at lines 14--16
 \OT1/cmr/m/n/12 geom^^Setri-co ite-ra-ti-vo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 \OT1/cmr/m/n/12 Sin em-bar-go, re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 \OT1/cmr/m/n/12 quie-re un tiem-po
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 []|\OT1/cmr/m/n/12 Implementation of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 singularity-free in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 hu-ma-noid ro-bo-tic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 Implementaci^^Son
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 18--19
+Underfull \hbox (badness 3333) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 sa sin sin-gu-la-ri-dad
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 18--19
+Underfull \hbox (badness 2818) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 hu-ma-noi-de uti-li-zan-
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 18--19
+Underfull \hbox (badness 2384) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 por m^^Seto-dos Ba-ye-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 []|\OT1/cmr/m/n/12 Omur Ay-dog-mus;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<recursos/turquia.png, id=46, 194.97844pt x 130.23656pt>
+<recursos/turquia.png, id=43, 194.97844pt x 130.23656pt>
 File: recursos/turquia.png Graphic file (type png)
 <use recursos/turquia.png>
-Package pdftex.def Info: recursos/turquia.png  used on input line 22.
+Package pdftex.def Info: recursos/turquia.png  used on input line 21.
 (pdftex.def)             Requested size: 85.35826pt x 57.01411pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 []|\OT1/cmr/m/n/12 Utiliza una red
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 23--24
+Underfull \hbox (badness 1142) in paragraph at lines 22--23
 \OT1/cmr/m/n/12 neu-ro-nal ba-sa-da en
  []
 
 
-Underfull \hbox (badness 5817) in paragraph at lines 23--24
+Underfull \hbox (badness 5817) in paragraph at lines 22--23
 \OT1/cmr/m/n/12 apren-di-za-je pro-fun-
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 23--24
+Underfull \hbox (badness 1019) in paragraph at lines 22--23
 \OT1/cmr/m/n/12 do pa-ra re-sol-ver la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 \OT1/cmr/m/n/12 ci-nem^^Sati-ca in-ver-sa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 \OT1/cmr/m/n/12 Sin em-bar-go, el
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 \OT1/cmr/m/n/12 a una apli-ca-ci^^Son
  []
 
 
-Overfull \hbox (2.76039pt too wide) in paragraph at lines 7--25
+Overfull \hbox (2.76039pt too wide) in paragraph at lines 6--24
  [][] 
  []
 
@@ -1287,157 +1338,161 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10 <./recursos/mexico.jpg> <./recursos/turquia.png>]
-Underfull \hbox (badness 1314) in paragraph at lines 32--32
+[9
+
+
+
+ <./recursos/mexico.jpg> <./recursos/turquia.png>]
+Underfull \hbox (badness 1314) in paragraph at lines 31--31
 []|\OT1/cmr/bx/sc/12 Tipo de pu-bli-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 []|\OT1/cmr/m/n/12 Inverse ki-ne-ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 tics so-lu-tion and
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 34--35
+Underfull \hbox (badness 7344) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 con-trol method of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 6-degree-of-freedom
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 ma-ni-pu-la-tor ba-sed
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 34--35
+Underfull \hbox (badness 7344) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 on deep re-in-for-ce-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 Soluci^^Son de ci-
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 34--35
+Underfull \hbox (badness 2941) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 nem^^Sati-ca in-ver-sa y
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 34--35
+Underfull \hbox (badness 2126) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 un ma-ni-pu-la-dor de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 ba-sa-do en apren-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 di-za-je de re-fuer-zo
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 36--37
+Underfull \hbox (badness 4048) in paragraph at lines 35--36
 []|\OT1/cmr/m/n/12 Chengyi Zhao; Yi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 min Wei; Jun-feng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 Xiao; Yong Sun;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 Dong-xing Zhang;
  []
 
 
-Underfull \hbox (badness 3039) in paragraph at lines 36--37
+Underfull \hbox (badness 3039) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 Qiu-quan Guo; Jun
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 36--37
+Underfull \hbox (badness 3312) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 University of Elec-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 36--37
+Underfull \hbox (badness 4673) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 tro-nic Scien-ce and
  []
 
-<recursos/china.png, id=51, 194.22563pt x 130.23656pt>
+<recursos/china.png, id=48, 194.22563pt x 130.23656pt>
 File: recursos/china.png Graphic file (type png)
 <use recursos/china.png>
-Package pdftex.def Info: recursos/china.png  used on input line 38.
+Package pdftex.def Info: recursos/china.png  used on input line 37.
 (pdftex.def)             Requested size: 85.35826pt x 57.2367pt.
 
-Underfull \hbox (badness 4366) in paragraph at lines 39--40
+Underfull \hbox (badness 4366) in paragraph at lines 38--39
 \OT1/cmr/m/n/12 mo de apren-di-za-je
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 \OT1/cmr/m/n/12 por re-fuer-zo que
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 39--40
+Underfull \hbox (badness 1728) in paragraph at lines 38--39
 \OT1/cmr/m/n/12 cal-cu-la la dis-tan-cia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 \OT1/cmr/m/n/12 Sin em-bar-go, se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 \OT1/cmr/m/n/12 vol-ver^^Sa in-efi-caz
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 39--40
+Underfull \hbox (badness 2486) in paragraph at lines 38--39
 \OT1/cmr/m/n/12 bra-zos de di-fe-ren-te
  []
 
 
-Overfull \hbox (2.76039pt too wide) in paragraph at lines 31--41
+Overfull \hbox (2.76039pt too wide) in paragraph at lines 30--40
  [][] 
  []
 
-) (./anteproyecto/marco.tex
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1447,21 +1502,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./recursos/china.png>]
-<recursos/raspberrypi.jpg, id=56, 98.61844pt x 147.55125pt>
+[10 <./recursos/china.png>]
+\openout2 = `anteproyecto/marco.aux'.
+
+ (./anteproyecto/marco.tex
+<recursos/raspberrypi.jpg, id=53, 98.61844pt x 147.55125pt>
 File: recursos/raspberrypi.jpg Graphic file (type jpg)
 <use recursos/raspberrypi.jpg>
-Package pdftex.def Info: recursos/raspberrypi.jpg  used on input line 14.
+Package pdftex.def Info: recursos/raspberrypi.jpg  used on input line 13.
 (pdftex.def)             Requested size: 49.30908pt x 73.77544pt.
-<recursos/qt.jpg, id=57, 109.91063pt x 85.06781pt>
+<recursos/qt.jpg, id=54, 109.91063pt x 85.06781pt>
 File: recursos/qt.jpg Graphic file (type jpg)
 <use recursos/qt.jpg>
-Package pdftex.def Info: recursos/qt.jpg  used on input line 27.
+Package pdftex.def Info: recursos/qt.jpg  used on input line 26.
 (pdftex.def)             Requested size: 54.95517pt x 42.5338pt.
-<recursos/i2c.png, id=58, 331.99031pt x 160.34906pt>
+<recursos/i2c.png, id=55, 331.99031pt x 160.34906pt>
 File: recursos/i2c.png Graphic file (type png)
 <use recursos/i2c.png>
-Package pdftex.def Info: recursos/i2c.png  used on input line 40.
+Package pdftex.def Info: recursos/i2c.png  used on input line 39.
 (pdftex.def)             Requested size: 165.99474pt x 80.17433pt.
 
 
@@ -1473,17 +1531,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./re
-cursos/raspberrypi.jpg> <./recursos/qt.jpg>]
-<recursos/spi.png, id=63, 413.29407pt x 105.39375pt>
+[11
+
+
+
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./recur
+sos/raspberrypi.jpg> <./recursos/qt.jpg>]
+<recursos/spi.png, id=60, 413.29407pt x 105.39375pt>
 File: recursos/spi.png Graphic file (type png)
 <use recursos/spi.png>
-Package pdftex.def Info: recursos/spi.png  used on input line 53.
+Package pdftex.def Info: recursos/spi.png  used on input line 52.
 (pdftex.def)             Requested size: 206.64651pt x 52.69673pt.
-<recursos/mpu6050.jpg, id=64, 100.87688pt x 126.4725pt>
+<recursos/mpu6050.jpg, id=61, 100.87688pt x 126.4725pt>
 File: recursos/mpu6050.jpg Graphic file (type jpg)
 <use recursos/mpu6050.jpg>
-Package pdftex.def Info: recursos/mpu6050.jpg  used on input line 69.
+Package pdftex.def Info: recursos/mpu6050.jpg  used on input line 68.
 (pdftex.def)             Requested size: 50.43831pt x 63.23608pt.
 
 
@@ -1495,40 +1557,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13 <./recursos/i2c.png> <./recursos/spi.png> <./recursos/mpu6050.jpg>]
-<recursos/mpu9250.jpg, id=71, 88.83188pt x 147.55125pt>
+[12 <./recursos/i2c.png> <./recursos/spi.png> <./recursos/mpu6050.jpg>]
+<recursos/mpu9250.jpg, id=67, 88.83188pt x 147.55125pt>
 File: recursos/mpu9250.jpg Graphic file (type jpg)
 <use recursos/mpu9250.jpg>
-Package pdftex.def Info: recursos/mpu9250.jpg  used on input line 84.
+Package pdftex.def Info: recursos/mpu9250.jpg  used on input line 83.
 (pdftex.def)             Requested size: 35.5321pt x 59.01944pt.
-<recursos/flexsensor.jpg, id=72, 133.24782pt x 101.62968pt>
-File: recursos/flexsensor.jpg Graphic file (type jpg)
-<use recursos/flexsensor.jpg>
-Package pdftex.def Info: recursos/flexsensor.jpg  used on input line 96.
-(pdftex.def)             Requested size: 79.9493pt x 60.97827pt.
-<recursos/mcp3004.jpg, id=73, 100.87688pt x 101.62968pt>
-File: recursos/mcp3004.jpg Graphic file (type jpg)
-<use recursos/mcp3004.jpg>
-Package pdftex.def Info: recursos/mcp3004.jpg  used on input line 107.
-(pdftex.def)             Requested size: 60.52658pt x 60.97827pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14 <./recursos/mpu9250.jpg> <./recursos/flexsensor.jpg> <./recursos/mcp3004.jp
-g>]
-<recursos/servomotor.png, id=77, 130.4875pt x 130.4875pt>
+<recursos/servomotor.png, id=68, 130.4875pt x 130.4875pt>
 File: recursos/servomotor.png Graphic file (type png)
 <use recursos/servomotor.png>
-Package pdftex.def Info: recursos/servomotor.png  used on input line 120.
+Package pdftex.def Info: recursos/servomotor.png  used on input line 119.
 (pdftex.def)             Requested size: 78.29309pt x 78.29309pt.
-) (./anteproyecto/propuesta.tex
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1538,24 +1578,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15 <./recursos/servomotor.png>]
-<recursos/fasecaptura.png, id=82, 586.44093pt x 255.20343pt>
+[13 <./recursos/mpu9250.jpg> <./recursos/servomotor.png>]
+\openout2 = `anteproyecto/propuesta.aux'.
+
+
+(./anteproyecto/propuesta.tex
+<recursos/fasecaptura.png, id=74, 586.44093pt x 255.20343pt>
 File: recursos/fasecaptura.png Graphic file (type png)
 <use recursos/fasecaptura.png>
-Package pdftex.def Info: recursos/fasecaptura.png  used on input line 6.
+Package pdftex.def Info: recursos/fasecaptura.png  used on input line 5.
 (pdftex.def)             Requested size: 498.47713pt x 216.92393pt.
 
-Overfull \hbox (20.75534pt too wide) in paragraph at lines 6--7
+Overfull \hbox (20.75534pt too wide) in paragraph at lines 5--6
  [][] 
  []
 
-<recursos/faseejecucion.png, id=83, 584.1825pt x 234.8775pt>
+<recursos/faseejecucion.png, id=75, 584.1825pt x 234.8775pt>
 File: recursos/faseejecucion.png Graphic file (type png)
 <use recursos/faseejecucion.png>
-Package pdftex.def Info: recursos/faseejecucion.png  used on input line 12.
+Package pdftex.def Info: recursos/faseejecucion.png  used on input line 11.
 (pdftex.def)             Requested size: 496.55746pt x 199.6468pt.
 
-Overfull \hbox (18.83568pt too wide) in paragraph at lines 12--13
+Overfull \hbox (18.83568pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
@@ -1569,25 +1613,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16 <./recursos/fasecaptura.png> <./recursos/faseejecucion.png>]
+[14
+
+
+
+ <./recursos/fasecaptura.png> <./recursos/faseejecucion.png>]
 Cap\'{\i }tulo 2.
 (./desarrollo/sensado.tex
-<recursos/ortesis.jpg, id=89, 903.375pt x 1606.0pt>
+<recursos/ortesis.jpg, id=81, 903.375pt x 1606.0pt>
 File: recursos/ortesis.jpg Graphic file (type jpg)
 <use recursos/ortesis.jpg>
 Package pdftex.def Info: recursos/ortesis.jpg  used on input line 7.
 (pdftex.def)             Requested size: 135.5004pt x 240.8896pt.
-<recursos/diagrama.png, id=90, 776.14969pt x 448.67625pt>
+<recursos/diagrama.png, id=82, 776.14969pt x 448.67625pt>
 File: recursos/diagrama.png Graphic file (type png)
 <use recursos/diagrama.png>
 Package pdftex.def Info: recursos/diagrama.png  used on input line 16.
 (pdftex.def)             Requested size: 465.6934pt x 269.20782pt.
 
 
-[17
+[15
+
+
 
  <./recursos/ortesis.jpg>]
-<recursos/salidaMPU.png, id=96, 565.36218pt x 201.00093pt>
+<recursos/salidaMPU.png, id=88, 565.36218pt x 201.00093pt>
 File: recursos/salidaMPU.png Graphic file (type png)
 <use recursos/salidaMPU.png>
 Package pdftex.def Info: recursos/salidaMPU.png  used on input line 31.
@@ -1602,30 +1652,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18 <./recursos/diagrama.png>]
-<recursos/ejes.jpeg, id=101, 389.455pt x 340.27126pt>
+[16 <./recursos/diagrama.png>]
+<recursos/ejes.jpeg, id=93, 389.455pt x 340.27126pt>
 File: recursos/ejes.jpeg Graphic file (type jpg)
 <use recursos/ejes.jpeg>
-Package pdftex.def Info: recursos/ejes.jpeg  used on input line 40.
+Package pdftex.def Info: recursos/ejes.jpeg  used on input line 41.
 (pdftex.def)             Requested size: 194.72702pt x 170.13521pt.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 45.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 45.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 45.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 45.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 45.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 45.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
 Missing character: There is no ° in font cmr12!
 Missing character: There is no ° in font cmr12!
@@ -1640,26 +1690,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19 <./recursos/salidaMPU.png> <./recursos/ejes.jpeg>]
-<recursos/calibracion.png, id=109, 577.40718pt x 133.24782pt>
+[17 <./recursos/salidaMPU.png> <./recursos/ejes.jpeg>]
+<recursos/calibracion.png, id=100, 577.40718pt x 133.24782pt>
 File: recursos/calibracion.png Graphic file (type png)
 <use recursos/calibracion.png>
-Package pdftex.def Info: recursos/calibracion.png  used on input line 57.
-(pdftex.def)             Requested size: 519.66167pt x 119.92192pt.
-
-Overfull \hbox (41.93988pt too wide) in paragraph at lines 57--58
- [][] 
- []
-
-<recursos/buffer.png, id=110, 336.50719pt x 196.48407pt>
-File: recursos/buffer.png Graphic file (type png)
-<use recursos/buffer.png>
-Package pdftex.def Info: recursos/buffer.png  used on input line 66.
-(pdftex.def)             Requested size: 302.85365pt x 176.83401pt.
-<recursos/fifoenable.png, id=111, 430.60875pt x 44.41594pt>
+Package pdftex.def Info: recursos/calibracion.png  used on input line 58.
+(pdftex.def)             Requested size: 461.92638pt x 106.59839pt.
+<recursos/fifoenable.png, id=101, 430.60875pt x 44.41594pt>
 File: recursos/fifoenable.png Graphic file (type png)
 <use recursos/fifoenable.png>
-Package pdftex.def Info: recursos/fifoenable.png  used on input line 77.
+Package pdftex.def Info: recursos/fifoenable.png  used on input line 78.
 (pdftex.def)             Requested size: 430.60768pt x 44.41582pt.
 
 
@@ -1671,11 +1711,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20 <./recursos/calibracion.png>]
-File: recursos/fifoenable.png Graphic file (type png)
-<use recursos/fifoenable.png>
-Package pdftex.def Info: recursos/fifoenable.png  used on input line 99.
-(pdftex.def)             Requested size: 430.60768pt x 44.41582pt.
+[18 <./recursos/calibracion.png> <./recursos/fifoenable.png>]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+
+Missing character: There is no ° in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no ° in font cmr12!
 
 
 
@@ -1686,8 +1743,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <./recursos/buffer.png> <./recursos/fifoenable.png>])
-(./desarrollo/localizacion.tex)
+[19]) (./desarrollo/localizacion.tex) (./desarrollo/visualizacion.tex)
+(./desarrollo/referencia.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1697,28 +1754,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[20]
+<recursos/referencia.png, id=116, 356.0803pt x 402.75468pt>
+File: recursos/referencia.png Graphic file (type png)
+<use recursos/referencia.png>
+Package pdftex.def Info: recursos/referencia.png  used on input line 7.
+(pdftex.def)             Requested size: 284.86462pt x 322.20418pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21 <./recursos/referencia.png>]
 Cap\'{\i }tulo 3.
 
 
-[23
+[22
 
 ] (./tesina.bbl)
 
-[24
+[23
 
 ]
 Cap\'{\i }tulo 4.
 
 
-[25
+[24
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./tesina.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-)
+ (./anteproyecto/planteamiento.aux) (./anteproyecto/objetivos.aux) (./anteproye
+cto/justificacion.aux) (./anteproyecto/estadodelarte.aux)
+(./anteproyecto/marco.aux) (./anteproyecto/propuesta.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
@@ -1727,28 +1802,32 @@ L3 programming layer <2024-10-09>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 26565 strings out of 473576
- 545746 string characters out of 5732203
+ 26677 strings out of 473576
+ 550184 string characters out of 5732203
  1022959 words of memory out of 5000000
- 49013 multiletter control sequences out of 15000+600000
- 567044 words of font info for 68 fonts, out of 8000000 for 9000
+ 49095 multiletter control sequences out of 15000+600000
+ 567045 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,93p,832b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,93p,827b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/202
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/
-texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on tesina.pdf (25 pages, 1001323 bytes).
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2
+024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on tesina.pdf (24 pages, 1061698 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 179 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

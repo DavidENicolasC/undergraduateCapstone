@@ -24,7 +24,7 @@ En lo que resta del documento, cuando se haga referencia a los sensores MPU-6050
 
 \subsubsection{Calibración}
 
-Los sensores inerciales fabricados con tecnología MEMS, como los MPU, necesitan ser calibrados y tener un valor de referencia (offset) con el cual se corrija la orientación medida por el sensor \cite{offsetMPU}. El diagrama de la Figura \ref{fig:salidaMPU} obtenido del manual \cite{offsetMPU} muestra el proceso para obtener datos de los sensores MPU; los valores de referencia del acelerómetro y el giroscopio (Gyro and Accel Offset Registers) se aplican a las mediciones obtenidas por el giroscopio y el acelerómetro (Gyro and Accel MEMS), antes de colocar dichos valores en los registros del sensor (Gyro/Accel Output Registers), o ser procesados por el Procesador de Movimiento Digital (DMP) y el buffer FIFO.
+Los sensores inerciales fabricados con tecnología MEMS, como los MPU, necesitan ser calibrados y tener un valor de referencia (offset) con el cual se corrija la orientación medida por el sensor \cite{offsetMPU}. El diagrama de la Figura \ref{fig:salidaMPU} obtenido del manual \cite{offsetMPU} muestra el proceso para obtener datos de los sensores MPU; los valores de referencia del acelerómetro y el giroscopio (Gyro and Accel Offset Registers) se aplican a las mediciones obtenidas por el giroscopio y el acelerómetro (Gyro and Accel MEMS), para corregir la mediciones y colocarlas en los registros del sensor (Gyro/Accel Output Registers). Luego, son procesadas por el Procesador de Movimiento Digital (DMP) y el resultado se almacena en un buffer FIFO interno.
 
 \begin{figure}[htb]
 	\centering
@@ -33,6 +33,7 @@ Los sensores inerciales fabricados con tecnología MEMS, como los MPU, necesitan
 	\label{fig:salidaMPU}
 \end{figure}
 
+\newpage
 La Figura \ref{fig:ejes} muestra los ejes de desplazamiento y la rotación de los sensores MPU. Se colocaron los sensores MPU en la ortesis de modo que el sentido positivo del eje X quedara hacia el frente del operador (quien tiene colocada la ortesis); de acuerdo con esto, el sentido positivo de rotación en el eje Z se obtiene girando el brazo hacia la izquierda del operador; el sentido positivo de rotación en el eje Y se obtiene girando el brazo hacia abajo; y el sentido positivo de rotación en el eje X se obtiene rotando el brazo hacia la derecha.
 
 \begin{figure}[htb]
@@ -54,23 +55,23 @@ Para que la calibración sea adecuada y se obtenga una medición confiable, el s
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.9]{calibracion.png}
+	\includegraphics[scale=0.8]{calibracion.png}
 	\caption{Diagrama a bloques del proceso de calibración del sensor}
 	\label{fig:calibracion}
 \end{figure}
 
-Se utilizó un patrón de arquitectura de segmentación de procesos (process pipeline), en el cual los datos obtenidos del DMP se colocan en un buffer interno del sensor de tipo FIFO (El primer dato que entra, es el último que sale), del cual se lee la orientación del sensor; esto permite que los datos de la orientación puedan ser procesados sin que existan errores debido a lecturas incompletas. Aunque no se indica explícitamente la estructura de datos interna del buffer, se puede representar como un buffer compartido, esto es, una cola circular. La Figura \ref{fig:buffer} muestra el buffer compartido. Puede notarse que se modela de tal manera que el proceso productor (el DMP) y el proceso consumidor (la lectura de datos del sensor) no accedan al mismo valor.
+%Se utilizó un patrón de arquitectura de segmentación de procesos (process pipeline), en el cual los datos obtenidos del DMP se colocan en un buffer interno del sensor de tipo FIFO (El primer dato que entra, es el último que sale), del cual se lee la orientación del sensor; esto permite que los datos de la orientación puedan ser procesados sin que existan errores debido a lecturas incompletas. Aunque no se indica explícitamente la estructura de datos interna del buffer, se puede representar como un buffer compartido, esto es, una cola circular. La Figura \ref{fig:buffer} muestra el buffer compartido. Puede notarse que se modela de tal manera que el proceso productor (el DMP) y el proceso consumidor (la lectura de datos del sensor) no accedan al mismo valor.
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=0.9]{buffer.png}
-	\caption{Representación del buffer interno del MPU como un buffer compartido}
-	\label{fig:buffer}
-\end{figure}
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[scale=0.9]{buffer.png}
+%	\caption{Representación del buffer interno del MPU como un buffer compartido}
+%	\label{fig:buffer}
+%\end{figure}
 
 Posteriormente, se debe de cargar el firmware del procesador \cite{userguideMotionDriver}. Este proceso debe de realizarse cada vez que se encienda el sensor. Aunque no se indique explícitamente, el hecho de que el firmware deba de ser cargado cada vez que se inicie el sensor sugiere que la memoria que contiene el firmware del sensor es una memoria volátil. La memoria está formada por 8 bancos, en los que se carga el firmware proporcionado por InvenSense \cite{userguideMotionDriver}. 
 
-Después de esto, se habilita el DMP y el buffer FIFO escribiendo el valor 1 en el bit FIFO\_EN (bit 6) del registro 106 indicados en las Figuras \ref{fig:fifoen} para la lectura de datos.
+Después de esto, se habilita el DMP y el buffer FIFO escribiendo el valor 1 en el bit FIFO\_EN (Bit 6) del registro 106 indicado en la Figura \ref{fig:fifoen} para la lectura de datos.
 
 \begin{figure}[htb]
 	\centering
@@ -83,26 +84,74 @@ Después de esto, se habilita el DMP y el buffer FIFO escribiendo el valor 1 en 
 
 El algoritmo utilizado por el DMP para obtener la orientación, no es de dominio público; en el Capítulo \ref{cap:anexos}, se describe el posible algoritmo utilizado por el DMP. Por otro lado, InvenSense, el desarrollador del sensor, ofrece un conjunto de bibliotecas para trabajar con el DMP \cite{userguideMotionDriver}.
 
-El DMP utiliza cuaterniones para representar internamente la orientación; Estos son rápidamente computables y evitan problemas que se producen al girar más de 90°, como el bloqueo del cardán.
+%La Figura muestra el proceso general para obtener la orientación del sensor. Primero, se obtiene en el buffer FIFO la orientación obtenida por el DMP, representada internamente por un cuaternión. El cuaternión es rápidamente computable y evita problemas que se producen al girar más de 90°, como el bloqueo del cardán. Posteriormente, se obtiene el vector de gravedad; este permite calcular la aceleración de la gravedad que experimenta el sensor en los 3 ejes, para tomarlo como sesgo y corregir la medición. Por último, se convierte lo antes calculado a valores de Euler, en radianes, y finalmente, dichos valores son convertidos a su equivalente en grados, que son los que se utilizan para indicar la orientación del sensor.
 
-El cuaternión \cite{cuaternion} es de la forma:.
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[scale=1]{fifoenable.png}
+%	\caption{Determinación de la orientación del sensor}
+%	\label{fig:orientacion}
+%\end{figure}
+
+El DMP representa internamente la orientación por medio de cuaterniones unitarios. Son rápidamente computables, y evitan problemas que se producen al girar más de 90\degree, como el bloqueo del cardán.
+
+El cuaternión es de la forma:.
 
 \begin{equation}
 	q = a + b\hat{i} + c\hat{j} + d\hat{k}
 	\label{eq:eqcuaternion}
 \end{equation}
 
-La Figura muestra el proceso general para obtener la orientación del sensor. Primero, se obtiene el cuaternión medido por el DMP del buffer FIFO. Posteriormente, se obtiene el vector de gravedad; este permite calcular la aceleración de la gravedad que experimenta el sensor en los 3 ejes, para tomarlo como sesgo y corregir la medición. Por último, se convierte lo antes calculado a valores de Euler, en radianes, y finalmente, dichos valores son convertidos a su equivalente en grados, que son los que se utilizan para indicar la orientación del sensor.
+Donde $a, b, c, d$ son las componentes del cuaternión que describe la rotación actual del sensor.
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=1]{fifoenable.png}
-	\caption{Determinación de la orientación del sensor}
-	\label{fig:orientacion}
-\end{figure}
+Para poder obtener la rotación del sensor, se utilizó la formula que obtiene las nuevas componentes de un vector si se le aplica una rotación descrita por un cuaternión, la cual es la siguiente:
 
-El vector de gravedad se determina como lo indica la ecuación :
+\begin{equation}
+	v' = q\cdot v\cdot q*
+	\label{eq:rotacioncuaternion}
+\end{equation}
 
-Para obtener la orientación de los sensores MPU en los tres ejes en radianes, se utilizan las ecuaciones :
+Donde $v'$ es el nuevo vector con la rotación aplicada, y $q*$ es el cuaternión conjugado, de la forma:
 
-Los valores antes obtenidos son convertidos a su equivalente en grados, como lo indican las ecuaciones : 
+\begin{equation}
+	q* = a - b\hat{i} - c\hat{j} - d\hat{k}
+	\label{eq:eqcuaternionconj}
+\end{equation}
+
+De acuerdo con los valores de referencia definidos para el acelerómetro ($X=0, Y=0, Z=-9.8$), el vector de gravedad es $g = (0, 0, -1)$. Se sustituyó en la ecuación \ref{eq:rotacioncuaternion} $v$ por el vector de gravedad. Al resolver, se obtuvieron las siguientes ecuaciones para obtener cada componente del vector de gravedad:
+
+\begin{equation}
+	v'_x = 2\cdot(x \cdot z - w \cdot y)
+	\label{eq:componentex}
+\end{equation}
+
+\begin{equation}
+	v'_y = 2\cdot(w \cdot x + y \cdot z)
+	\label{eq:componentey}
+\end{equation}
+
+\begin{equation}
+	v'_z = w^2 - x^2 - y^2 + z^2
+	\label{eq:componentez}
+\end{equation}
+
+Para obtener los ángulos entre el vector $v'$ y los ejes $x$, $y$, $z$ definidos cuando se calibró el sensor (es decir, aquella orientación del sensor en la que la salida del DMP es $\theta_x = 0°,\theta_y = 0°,\theta_z = 0°$), se utilizaron las siguientes ecuaciones:
+
+\begin{equation}
+	\theta_x = \tan^{-1}\frac{v'_y}{v'_z}
+	\label{eq:angulox}
+\end{equation}
+
+\begin{equation}
+	\theta_y = \tan^{-1}\frac{v'_x}{\sqrt{v'^2_y + v'^2_z}}
+	\label{eq:anguloy}
+\end{equation}
+
+\begin{equation}
+	\theta_z = \tan^{-1}\frac{q_x \cdot q_y + q_w \cdot q_z}{1 - 2 \cdot (q_x^2 + q_y^2)}
+	\label{eq:anguloz}
+\end{equation}
+
+Si el sensor se encuentra boca abajo (es decir, la componente Z del vector de gravedad apunta en el sentido positivo del eje Z), es necesario invertir el sentido de la inclinación en el eje Y. Si el valor de la inclinación en el eje Y es positivo, el valor se corrige a $\pi - v'_y$; si es negativo, el valor se ajusta a $-\pi - v'_y$.
+
+Los ángulos obtenidos $\theta_x$, $\theta_y$, $\theta_z$, son la orientación del sensor.

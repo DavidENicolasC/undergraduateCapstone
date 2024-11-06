@@ -1,3 +1,20 @@
 \subsection{Localización}
 
-Para obtener la posición (x, y, z) en el espacio, se utilizan las
+La posición en $(x, y, z)$ del sensor en la muñeca, será la posición que debe alcanzar el efector final del brazo robótico. Para obtener dicha posición, tomando el hombro como la posición $(0, 0, 0)$, se utilizaron las siguientes ecuaciones, considerando que aquellos ángulos con el símbolo $\theta^1$, son los ángulos medidos por el sensor colocado en el codo de la ortesis, y que aquellos con el símbolo $\theta^2$, son los ángulos medidos por el sensor colocado en el extremo del antebrazo:
+
+\begin{equation}
+	x = L_1 \cdot \cos \theta^1_x +  L_2 \cdot \sen \theta^2_x
+	\label{eq:angulox}
+\end{equation}
+
+\begin{equation}
+	y = L_1 \cdot \cos \theta^1_y +  L_2 \cdot \sen \theta^2_y
+	\label{eq:angulox}
+\end{equation}
+
+\begin{equation}
+	z = L_1 \cdot \cos \theta^1_z +  L_2 \cdot \sen \theta^2_z
+	\label{eq:angulox}
+\end{equation}
+
+Donde $L_1$ es la longitud del brazo de la ortesis, desde el hombro (siendo la posición $(0, 0, 0)$) hasta el sensor colocado en el codo, y $L_2$ es la longitud del antebrazo de la ortesis, desde el sensor colocado en el codo, hasta el sensor colocado en el extremo del antebrazo.
