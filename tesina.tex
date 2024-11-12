@@ -61,11 +61,19 @@
 
 \input{portada}
 
-%\include{agradecimientos}
+\include{agradecimientos}
 
 \newpage
 \renewcommand{\contentsname}{\'Indice}
 \tableofcontents
+
+\newpage
+\renewcommand{\listtablename}{Lista de tablas}
+\listoftables
+
+\newpage
+\renewcommand{\listfigurename}{Lista de figuras}
+\listoffigures
 
 \newpage
 \chapter{Anteproyecto}
@@ -96,6 +104,19 @@
 \input{desarrollo/visualizacion}
 
 \input{desarrollo/referencia}
+
+\input{desarrollo/almacenamiento}
+
+\newpage
+\section{Fase de ejecución}
+
+\input{desarrollo/lectura}
+
+\input{desarrollo/transmision}
+
+\input{desarrollo/interpretacion}
+
+\input{desarrollo/reproduccion}
 
 \newpage
 \chapter{Resultados}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.30)  5 NOV 2024 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.30)  7 NOV 2024 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,7 +1022,17 @@ Package pdftex.def Info: recursos/esime.png  used on input line 32.
 
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./recursos/logo
--ipn-guinda.png> <./recursos/ESIME.png>]) (./tesina.toc
+-ipn-guinda.png> <./recursos/ESIME.png>])
+\openout2 = `agradecimientos.aux'.
+
+ (./agradecimientos.tex
+
+[2
+
+
+])
+
+[3] (./tesina.toc
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
@@ -1031,26 +1041,50 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 
-[2
+[4
 
-]
+
+] (./tesina.lot
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+\tf@lot=\write6
+\openout6 = `tesina.lot'.
+
+
+
+[5] (./tesina.lof
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+\tf@lof=\write7
+\openout7 = `tesina.lof'.
+
+
+
+[6]
 Cap\'{\i }tulo 1.
 (./anteproyecto/introduccion.tex
-<recursos/brazo.jpg, id=20, 276.28218pt x 184.43906pt>
+<recursos/brazo.jpg, id=32, 276.28218pt x 184.43906pt>
 File: recursos/brazo.jpg Graphic file (type jpg)
 <use recursos/brazo.jpg>
-Package pdftex.def Info: recursos/brazo.jpg  used on input line 7.
+Package pdftex.def Info: recursos/brazo.jpg  used on input line 9.
 (pdftex.def)             Requested size: 165.77057pt x 110.66428pt.
 
 
-[3
+[7
 
  <./recursos/brazo.jpg>]
-<recursos/plckaab.png, id=24, 196.0926pt x 92.9874pt>
+<recursos/plckaab.png, id=37, 196.0926pt x 92.9874pt>
 File: recursos/plckaab.png Graphic file (type png)
 <use recursos/plckaab.png>
-Package pdftex.def Info: recursos/plckaab.png  used on input line 17.
+Package pdftex.def Info: recursos/plckaab.png  used on input line 19.
 (pdftex.def)             Requested size: 176.4817pt x 83.68788pt.
+<recursos/siscritico.png, id=38, 350.81062pt x 170.13562pt>
+File: recursos/siscritico.png Graphic file (type png)
+<use recursos/siscritico.png>
+Package pdftex.def Info: recursos/siscritico.png  used on input line 28.
+(pdftex.def)             Requested size: 315.72662pt x 153.12062pt.
 )
 
 
@@ -1061,16 +1095,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4 <./recursos/plckaab.png>]
+[8{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./rec
+ursos/plckaab.png> <./recursos/siscritico.png>]
 \openout2 = `anteproyecto/planteamiento.aux'.
 
- (./anteproyecto/planteamiento.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--75
+
+(./anteproyecto/planteamiento.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 3--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--75
+Underfull \hbox (badness 10000) in paragraph at lines 3--83
 
  []
 
@@ -1084,7 +1120,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5
+[9
 
 ]
 \openout2 = `anteproyecto/objetivos.aux'.
@@ -1099,7 +1135,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6
+[10
 
 
 
@@ -1113,7 +1149,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[11]
 \openout2 = `anteproyecto/justificacion.aux'.
 
  (./anteproyecto/justificacion.tex)
@@ -1126,7 +1162,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8
+[12
 
 
 
@@ -1203,7 +1239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 \OT1/cmr/m/n/12 In-tel Cor-po-ra-tion;
  []
 
-<recursos/mexico.jpg, id=42, 210.5466pt x 118.7637pt>
+<recursos/mexico.jpg, id=57, 210.5466pt x 118.7637pt>
 File: recursos/mexico.jpg Graphic file (type jpg)
 <use recursos/mexico.jpg>
 Package pdftex.def Info: recursos/mexico.jpg  used on input line 13.
@@ -1278,7 +1314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<recursos/turquia.png, id=43, 194.97844pt x 130.23656pt>
+<recursos/turquia.png, id=58, 194.97844pt x 130.23656pt>
 File: recursos/turquia.png Graphic file (type png)
 <use recursos/turquia.png>
 Package pdftex.def Info: recursos/turquia.png  used on input line 21.
@@ -1338,7 +1374,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9
+[13
 
 
 
@@ -1447,7 +1483,7 @@ Underfull \hbox (badness 4673) in paragraph at lines 35--36
 \OT1/cmr/m/n/12 tro-nic Scien-ce and
  []
 
-<recursos/china.png, id=48, 194.22563pt x 130.23656pt>
+<recursos/china.png, id=64, 194.22563pt x 130.23656pt>
 File: recursos/china.png Graphic file (type png)
 <use recursos/china.png>
 Package pdftex.def Info: recursos/china.png  used on input line 37.
@@ -1502,21 +1538,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10 <./recursos/china.png>]
+[14 <./recursos/china.png>]
 \openout2 = `anteproyecto/marco.aux'.
 
  (./anteproyecto/marco.tex
-<recursos/raspberrypi.jpg, id=53, 98.61844pt x 147.55125pt>
+<recursos/raspberrypi.jpg, id=69, 98.61844pt x 147.55125pt>
 File: recursos/raspberrypi.jpg Graphic file (type jpg)
 <use recursos/raspberrypi.jpg>
 Package pdftex.def Info: recursos/raspberrypi.jpg  used on input line 13.
 (pdftex.def)             Requested size: 49.30908pt x 73.77544pt.
-<recursos/qt.jpg, id=54, 109.91063pt x 85.06781pt>
+<recursos/qt.jpg, id=70, 109.91063pt x 85.06781pt>
 File: recursos/qt.jpg Graphic file (type jpg)
 <use recursos/qt.jpg>
 Package pdftex.def Info: recursos/qt.jpg  used on input line 26.
 (pdftex.def)             Requested size: 54.95517pt x 42.5338pt.
-<recursos/i2c.png, id=55, 331.99031pt x 160.34906pt>
+<recursos/i2c.png, id=71, 331.99031pt x 160.34906pt>
 File: recursos/i2c.png Graphic file (type png)
 <use recursos/i2c.png>
 Package pdftex.def Info: recursos/i2c.png  used on input line 39.
@@ -1531,18 +1567,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11
+[15
 
 
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./recur
-sos/raspberrypi.jpg> <./recursos/qt.jpg>]
-<recursos/spi.png, id=60, 413.29407pt x 105.39375pt>
+ <./recursos/raspberrypi.jpg> <./recursos/qt.jpg>]
+<recursos/spi.png, id=75, 413.29407pt x 105.39375pt>
 File: recursos/spi.png Graphic file (type png)
 <use recursos/spi.png>
 Package pdftex.def Info: recursos/spi.png  used on input line 52.
 (pdftex.def)             Requested size: 206.64651pt x 52.69673pt.
-<recursos/mpu6050.jpg, id=61, 100.87688pt x 126.4725pt>
+<recursos/mpu6050.jpg, id=76, 100.87688pt x 126.4725pt>
 File: recursos/mpu6050.jpg Graphic file (type jpg)
 <use recursos/mpu6050.jpg>
 Package pdftex.def Info: recursos/mpu6050.jpg  used on input line 68.
@@ -1557,13 +1592,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <./recursos/i2c.png> <./recursos/spi.png> <./recursos/mpu6050.jpg>]
-<recursos/mpu9250.jpg, id=67, 88.83188pt x 147.55125pt>
+[16 <./recursos/i2c.png> <./recursos/spi.png> <./recursos/mpu6050.jpg>]
+<recursos/mpu9250.jpg, id=82, 88.83188pt x 147.55125pt>
 File: recursos/mpu9250.jpg Graphic file (type jpg)
 <use recursos/mpu9250.jpg>
 Package pdftex.def Info: recursos/mpu9250.jpg  used on input line 83.
 (pdftex.def)             Requested size: 35.5321pt x 59.01944pt.
-<recursos/servomotor.png, id=68, 130.4875pt x 130.4875pt>
+<recursos/servomotor.png, id=83, 130.4875pt x 130.4875pt>
 File: recursos/servomotor.png Graphic file (type png)
 <use recursos/servomotor.png>
 Package pdftex.def Info: recursos/servomotor.png  used on input line 119.
@@ -1578,28 +1613,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13 <./recursos/mpu9250.jpg> <./recursos/servomotor.png>]
+[17 <./recursos/mpu9250.jpg> <./recursos/servomotor.png>]
 \openout2 = `anteproyecto/propuesta.aux'.
 
 
 (./anteproyecto/propuesta.tex
-<recursos/fasecaptura.png, id=74, 586.44093pt x 255.20343pt>
+<recursos/fasecaptura.png, id=88, 586.44093pt x 255.20343pt>
 File: recursos/fasecaptura.png Graphic file (type png)
 <use recursos/fasecaptura.png>
-Package pdftex.def Info: recursos/fasecaptura.png  used on input line 5.
+Package pdftex.def Info: recursos/fasecaptura.png  used on input line 7.
 (pdftex.def)             Requested size: 498.47713pt x 216.92393pt.
 
-Overfull \hbox (20.75534pt too wide) in paragraph at lines 5--6
+Overfull \hbox (20.75534pt too wide) in paragraph at lines 7--8
  [][] 
  []
 
-<recursos/faseejecucion.png, id=75, 584.1825pt x 234.8775pt>
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18
+
+
+
+ <./recursos/fasecaptura.png>]
+<recursos/faseejecucion.png, id=96, 584.1825pt x 234.8775pt>
 File: recursos/faseejecucion.png Graphic file (type png)
 <use recursos/faseejecucion.png>
-Package pdftex.def Info: recursos/faseejecucion.png  used on input line 11.
+Package pdftex.def Info: recursos/faseejecucion.png  used on input line 17.
 (pdftex.def)             Requested size: 496.55746pt x 199.6468pt.
 
-Overfull \hbox (18.83568pt too wide) in paragraph at lines 11--12
+Overfull \hbox (18.83568pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
@@ -1613,31 +1663,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14
-
-
-
- <./recursos/fasecaptura.png> <./recursos/faseejecucion.png>]
+[19 <./recursos/faseejecucion.png>]
 Cap\'{\i }tulo 2.
 (./desarrollo/sensado.tex
-<recursos/ortesis.jpg, id=81, 903.375pt x 1606.0pt>
+<recursos/ortesis.jpg, id=102, 903.375pt x 1606.0pt>
 File: recursos/ortesis.jpg Graphic file (type jpg)
 <use recursos/ortesis.jpg>
 Package pdftex.def Info: recursos/ortesis.jpg  used on input line 7.
-(pdftex.def)             Requested size: 135.5004pt x 240.8896pt.
-<recursos/diagrama.png, id=82, 776.14969pt x 448.67625pt>
+(pdftex.def)             Requested size: 180.6718pt x 321.19432pt.
+<recursos/diagrama.png, id=103, 776.14969pt x 448.67625pt>
 File: recursos/diagrama.png Graphic file (type png)
 <use recursos/diagrama.png>
 Package pdftex.def Info: recursos/diagrama.png  used on input line 16.
 (pdftex.def)             Requested size: 465.6934pt x 269.20782pt.
 
 
-[15
+[20
 
 
 
  <./recursos/ortesis.jpg>]
-<recursos/salidaMPU.png, id=88, 565.36218pt x 201.00093pt>
+<recursos/salidaMPU.png, id=107, 565.36218pt x 201.00093pt>
 File: recursos/salidaMPU.png Graphic file (type png)
 <use recursos/salidaMPU.png>
 Package pdftex.def Info: recursos/salidaMPU.png  used on input line 31.
@@ -1652,8 +1698,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16 <./recursos/diagrama.png>]
-<recursos/ejes.jpeg, id=93, 389.455pt x 340.27126pt>
+[21 <./recursos/diagrama.png>]
+<recursos/ejes.jpeg, id=112, 389.455pt x 340.27126pt>
 File: recursos/ejes.jpeg Graphic file (type jpg)
 <use recursos/ejes.jpeg>
 Package pdftex.def Info: recursos/ejes.jpeg  used on input line 41.
@@ -1690,16 +1736,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17 <./recursos/salidaMPU.png> <./recursos/ejes.jpeg>]
-<recursos/calibracion.png, id=100, 577.40718pt x 133.24782pt>
+[22 <./recursos/salidaMPU.png> <./recursos/ejes.jpeg>]
+<recursos/calibracion.png, id=118, 577.40718pt x 133.24782pt>
 File: recursos/calibracion.png Graphic file (type png)
 <use recursos/calibracion.png>
 Package pdftex.def Info: recursos/calibracion.png  used on input line 58.
 (pdftex.def)             Requested size: 461.92638pt x 106.59839pt.
-<recursos/fifoenable.png, id=101, 430.60875pt x 44.41594pt>
+<recursos/buffer.png, id=119, 336.50719pt x 196.48407pt>
+File: recursos/buffer.png Graphic file (type png)
+<use recursos/buffer.png>
+Package pdftex.def Info: recursos/buffer.png  used on input line 67.
+(pdftex.def)             Requested size: 302.85365pt x 176.83401pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23 <./recursos/calibracion.png>]
+<recursos/fifoenable.png, id=125, 430.60875pt x 44.41594pt>
 File: recursos/fifoenable.png Graphic file (type png)
 <use recursos/fifoenable.png>
-Package pdftex.def Info: recursos/fifoenable.png  used on input line 78.
+Package pdftex.def Info: recursos/fifoenable.png  used on input line 79.
 (pdftex.def)             Requested size: 430.60768pt x 44.41582pt.
 
 
@@ -1711,28 +1773,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18 <./recursos/calibracion.png> <./recursos/fifoenable.png>]
+[24 <./recursos/buffer.png> <./recursos/fifoenable.png>]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 139.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 139.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 139.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 139.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 138.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 139.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 139.
 
 Missing character: There is no ° in font cmr12!
 Missing character: There is no ° in font cmr12!
 Missing character: There is no ° in font cmr12!
+) (./desarrollo/localizacion.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+<recursos/resultante.png, id=136, 648.92438pt x 394.47375pt>
+File: recursos/resultante.png Graphic file (type png)
+<use recursos/resultante.png>
+Package pdftex.def Info: recursos/resultante.png  used on input line 28.
+(pdftex.def)             Requested size: 324.4614pt x 197.23639pt.
+) (./desarrollo/visualizacion.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26 <./recursos/resultante.png>]
+<recursos/interfaz.jpg, id=142, 532.99126pt x 336.50719pt>
+File: recursos/interfaz.jpg Graphic file (type jpg)
+<use recursos/interfaz.jpg>
+Package pdftex.def Info: recursos/interfaz.jpg  used on input line 13.
+(pdftex.def)             Requested size: 373.09134pt x 235.5534pt.
+) (./desarrollo/referencia.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 
@@ -1743,23 +1840,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]) (./desarrollo/localizacion.tex) (./desarrollo/visualizacion.tex)
-(./desarrollo/referencia.tex
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[20]
-<recursos/referencia.png, id=116, 356.0803pt x 402.75468pt>
+[27 <./recursos/interfaz.jpg>]
+<recursos/referencia.png, id=146, 356.0803pt x 402.75468pt>
 File: recursos/referencia.png Graphic file (type png)
 <use recursos/referencia.png>
 Package pdftex.def Info: recursos/referencia.png  used on input line 7.
-(pdftex.def)             Requested size: 284.86462pt x 322.20418pt.
+(pdftex.def)             Requested size: 213.64983pt x 241.65466pt.
+) (./desarrollo/almacenamiento.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28 <./recursos/referencia.png>]
+<recursos/formatoarchivo.png, id=151, 770.88pt x 311.66437pt>
+File: recursos/formatoarchivo.png Graphic file (type png)
+<use recursos/formatoarchivo.png>
+Package pdftex.def Info: recursos/formatoarchivo.png  used on input line 8.
+(pdftex.def)             Requested size: 539.61234pt x 218.16356pt.
+
+Overfull \hbox (61.89055pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
 )
 
 
@@ -1770,30 +1877,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <./recursos/referencia.png>]
+[29 <./recursos/formatoarchivo.png>] (./desarrollo/lectura.tex)
+(./desarrollo/transmision.tex) (./desarrollo/interpretacion.tex)
+(./desarrollo/reproduccion.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
 Cap\'{\i }tulo 3.
 
 
-[22
+[31
 
 ] (./tesina.bbl)
 
-[23
+[32
 
 ]
 Cap\'{\i }tulo 4.
 
 
-[24
+[33
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./tesina.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (./anteproyecto/planteamiento.aux) (./anteproyecto/objetivos.aux) (./anteproye
-cto/justificacion.aux) (./anteproyecto/estadodelarte.aux)
-(./anteproyecto/marco.aux) (./anteproyecto/propuesta.aux))
+ (./agradecimientos.aux) (./anteproyecto/planteamiento.aux)
+(./anteproyecto/objetivos.aux) (./anteproyecto/justificacion.aux)
+(./anteproyecto/estadodelarte.aux) (./anteproyecto/marco.aux)
+(./anteproyecto/propuesta.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
@@ -1807,27 +1927,28 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26677 strings out of 473576
- 550184 string characters out of 5732203
+ 26811 strings out of 473576
+ 553729 string characters out of 5732203
  1022959 words of memory out of 5000000
- 49095 multiletter control sequences out of 15000+600000
- 567045 words of font info for 68 fonts, out of 8000000 for 9000
+ 49204 multiletter control sequences out of 15000+600000
+ 567052 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,93p,827b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,93p,1838b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/202
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/
-texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2
-024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on tesina.pdf (24 pages, 1061698 bytes).
+ts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/202
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on tesina.pdf (33 pages, 1363592 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 223 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

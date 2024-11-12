@@ -2,6 +2,8 @@
 
 Los brazos robóticos articulados son sistemas mecánicos con articulaciones rotativas, diseñados para replicar funciones del brazo humano, incluyendo movimientos de rotación y alcance. Suelen tener una pieza en el extremo del robot llamado efector final, como se muestra en la Figura \ref{fig:brazoR}, que realiza la función del robot en el entorno (soldar, manipular objetos, etc.). Cada unión en las articulaciones representa un grado de libertad (DoF).
 
+\vspace{1cm}
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.6]{brazo.jpg}
@@ -17,4 +19,13 @@ Sistemas Eléctricos de Potencia Computarizada (SEPDC) es una empresa mexicana q
 	\includegraphics[scale=0.9]{plckaab.png}
 	\caption{PLC-Kaab fabricado por SEDPC}
 	\label{fig:plc}
+\end{figure}
+
+Los PLC´s pueden ser empleados para el control de sistemas críticos, como lo demuestra la Figura \ref{fig:siscritico}. El termistor mide la temperatura en el ambiente; este valor es enviado al PLC, quien toma una decisión basado en dicho valor para controlar la apertura de una válvula por medio de un motor, dejando pasar cierta cantidad de líquido a través de la tubería.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{siscritico.png}
+	\caption{Uso de un PLC para controlar un sistema crítico}
+	\label{fig:siscritico}
 \end{figure}
