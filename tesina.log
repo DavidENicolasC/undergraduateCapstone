@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.30)  5 NOV 2024 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.30)  11 NOV 2024 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,10 +838,9 @@ Package: gensymb 2022/10/17 v1.0.2 (KJH)
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 
-(./agradecimientos.aux) (./anteproyecto/planteamiento.aux)
-(./anteproyecto/objetivos.aux) (./anteproyecto/justificacion.aux)
-(./anteproyecto/estadodelarte.aux) (./anteproyecto/marco.aux)
-(./anteproyecto/propuesta.aux)
+(./anteproyecto/planteamiento.aux) (./anteproyecto/objetivos.aux)
+(./anteproyecto/justificacion.aux) (./anteproyecto/estadodelarte.aux)
+(./anteproyecto/marco.aux) (./anteproyecto/propuesta.aux)
 
 LaTeX Warning: Label `eq:angulox' multiply defined.
 
@@ -1760,7 +1759,7 @@ File: recursos/referencia.png Graphic file (type png)
 <use recursos/referencia.png>
 Package pdftex.def Info: recursos/referencia.png  used on input line 7.
 (pdftex.def)             Requested size: 284.86462pt x 322.20418pt.
-)
+) (./desarrollo/almacenamiento.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1771,20 +1770,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21 <./recursos/referencia.png>]
+<recursos/formatoarchivo.png, id=121, 770.88pt x 311.66437pt>
+File: recursos/formatoarchivo.png Graphic file (type png)
+<use recursos/formatoarchivo.png>
+Package pdftex.def Info: recursos/formatoarchivo.png  used on input line 8.
+(pdftex.def)             Requested size: 462.53157pt x 187.00006pt.
+) (./desarrollo/lectura.tex)
+(./desarrollo/transmision.tex) (./desarrollo/interpretacion.tex)
+(./desarrollo/reproduccion.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22 <./recursos/formatoarchivo.png>]
 Cap\'{\i }tulo 3.
 
 
-[22
-
-] (./tesina.bbl)
-
 [23
+
+] (./tesina.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+)
+
+[24
 
 ]
 Cap\'{\i }tulo 4.
 
 
-[24
+[25
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1807,11 +1834,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26677 strings out of 473576
- 550184 string characters out of 5732203
+ 26727 strings out of 473576
+ 551680 string characters out of 5732203
  1022959 words of memory out of 5000000
- 49095 multiletter control sequences out of 15000+600000
- 567045 words of font info for 68 fonts, out of 8000000 for 9000
+ 49133 multiletter control sequences out of 15000+600000
+ 567044 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,93p,827b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
@@ -1824,10 +1851,10 @@ ts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2
 024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on tesina.pdf (24 pages, 1061698 bytes).
+Output written on tesina.pdf (25 pages, 1073804 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 185 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
