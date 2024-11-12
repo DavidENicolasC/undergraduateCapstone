@@ -69,19 +69,7 @@ Para que la calibración sea adecuada y se obtenga una medición confiable, el s
 	\label{fig:calibracion}
 \end{figure}
 
-<<<<<<< HEAD
-=======
-Se utilizó un patrón de arquitectura de segmentación de procesos (process pipeline), en el cual los datos obtenidos del DMP se colocan en un buffer interno del sensor de tipo FIFO (El primer dato que entra, es el último que sale), del cual se lee la orientación del sensor; esto permite que los datos de la orientación puedan ser procesados sin que existan errores debido a lecturas incompletas. Aunque no se indica explícitamente la estructura de datos interna del buffer, se puede representar como un buffer compartido, esto es, una cola circular. La Figura \ref{fig:buffer} muestra el buffer compartido. Puede notarse que se modela de tal manera que el proceso productor (el DMP) y el proceso consumidor (la lectura de datos del sensor) no accedan al mismo valor.
-
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=0.9]{buffer.png}
-	\caption{Representación del buffer interno del MPU como un buffer compartido}
-	\label{fig:buffer}
-\end{figure}
-
 \newpage
->>>>>>> texstudio
 Posteriormente, se debe de cargar el firmware del procesador \cite{userguideMotionDriver}. Este proceso debe de realizarse cada vez que se encienda el sensor. Aunque no se indique explícitamente, el hecho de que el firmware deba de ser cargado cada vez que se inicie el sensor sugiere que la memoria que contiene el firmware del sensor es una memoria volátil. La memoria está formada por 8 bancos, en los que se carga el firmware proporcionado por InvenSense \cite{userguideMotionDriver}. 
 
 Después de esto, se habilita el DMP y el buffer FIFO escribiendo el valor 1 en el bit FIFO\_EN (Bit 6) del registro 106 indicado en la Figura \ref{fig:fifoen} para la lectura de datos.
