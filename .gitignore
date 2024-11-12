@@ -1,4 +1,6 @@
+## archivos auxiliares de Gummi
 *.gummi
+*.tex.swp
 
 ## archivos auxiliares latex/pdflatex:
 *.aux
