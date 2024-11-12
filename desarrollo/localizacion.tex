@@ -1,20 +1,31 @@
 \subsection{Localización}
 
-La posición en $(x, y, z)$ del sensor en la muñeca, será la posición que debe alcanzar el efector final del brazo robótico. Para obtener dicha posición, tomando el hombro como la posición $(0, 0, 0)$, se utilizaron las siguientes ecuaciones, considerando que aquellos ángulos con el símbolo $\theta^1$, son los ángulos medidos por el sensor colocado en el codo de la ortesis, y que aquellos con el símbolo $\theta^2$, son los ángulos medidos por el sensor colocado en el extremo del antebrazo:
+La posición en $(x, y, z)$ del sensor en el extremo de la ortesis, será la posición que debe alcanzar el efector final del brazo robótico. Esta se mide con respecto al hombro, que tiene las coordenadas en el origen $(0, 0 ,0)$.
+
+Si $(\theta_{x_1}, \theta_{y_1}, \theta_{z_1})$ son los ángulos de inclinación obtenidos del sensor colocado en el codo de la ortesis, y $(\theta_{x_2}, \theta_{y_2}, \theta_{z_2})$ son los ángulos de inclinación obtenidos del sensor colocado en el extremo de la ortesis, las siguientes ecuaciones permiten calcular las coordenadas en el espacio del sensor en el extremo de la ortesis con respecto al hombro:
 
 \begin{equation}
-	x = L_1 \cdot \cos \theta^1_x +  L_2 \cdot \sen \theta^2_x
+	x = L_1 \cdot \cos \theta_{x_1} +  L_2 \cdot \cos \theta_{x_2}
 	\label{eq:angulox}
 \end{equation}
 
 \begin{equation}
-	y = L_1 \cdot \cos \theta^1_y +  L_2 \cdot \sen \theta^2_y
+	y = L_1 \cdot \cos \theta_{y_1} +  L_2 \cdot \cos \theta_{y_2}
 	\label{eq:angulox}
 \end{equation}
 
 \begin{equation}
-	z = L_1 \cdot \cos \theta^1_z +  L_2 \cdot \sen \theta^2_z
+	z = L_1 \cdot \cos \theta_{z_1} +  L_2 \cdot \cos \theta_{z_2}
 	\label{eq:angulox}
 \end{equation}
 
-Donde $L_1$ es la longitud del brazo de la ortesis, desde el hombro (siendo la posición $(0, 0, 0)$) hasta el sensor colocado en el codo, y $L_2$ es la longitud del antebrazo de la ortesis, desde el sensor colocado en el codo, hasta el sensor colocado en el extremo del antebrazo.
+Donde $L_1$ es la distancia desde el hombro hasta el sensor colocado en el codo, y $L_2$ es la distancia desde el sensor colocado en el codo hasta el sensor colocado en el extremo de la ortesis.
+
+El resultado es el que se muestra en la Figura \ref{fig:resultante}.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.5]{resultante.png}
+	\caption{Cálculo de la resultante para obtener la posición del efector final}
+	\label{fig:resultante}
+\end{figure}

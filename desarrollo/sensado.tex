@@ -1,15 +1,15 @@
 \subsection{Sensado}
 
-La empresa requirió que se utilizara una ortesis de brazo donde se montara el sistema de medición de los sensores inerciales y la Raspberry Pi. La Figura \ref{fig:ortesis} muestra la ortesis de brazo utilizada.
+La empresa requirió que se utilizara una ortesis de brazo donde se montara el sistema de medición de los sensores inerciales y la Raspberry Pi. La Figura \ref{fig:ortesis} muestra la ortesis de brazo utilizada. Para encontrar la posición del efector final, se utilizaron los dos sensores MPU-6050; uno se colocó en el codo, mientras que el segundo se colocó en el extremo de la ortesis. El sensor MPU-9250 se colocó en la parte superior de la mano, para controlar el movimiento del efector final.
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.15]{ortesis.jpg}
+	\rotatebox{90}{\includegraphics[scale=0.2]{ortesis.jpg}}
 	\caption{Ortesis utilizada para el proyecto}
 	\label{fig:ortesis}
 \end{figure}
 
-Se realizó la conexión entre los sensores MPU y la Raspberry Pi 3 B+. La Figura \ref{fig:diagrama} muestra el diagrama de conexión entre los sensores y la Raspberry Pi. Los pines SDA y SCL de los sensores MPU-6050 se conectaron al bus serial $I^2C$, mientras que los pines MISO, MOSI, SCK y SS del sensor MPU-9250 se conectaron al bus serial SPI.
+Se realizó la conexión entre los sensores y la Raspberry Pi 3 B+. La Figura \ref{fig:diagrama} muestra el diagrama de interconexión. Los pines SDA y SCL de los sensores MPU-6050 se conectaron al bus serial $I^2C$, mientras que los pines MISO, MOSI y SCK del sensor MPU-9250 se conectaron al bus serial SPI.
 
 \begin{figure}[htb]
 	\centering
@@ -18,7 +18,7 @@ Se realizó la conexión entre los sensores MPU y la Raspberry Pi 3 B+. La Figur
 	\label{fig:diagrama}
 \end{figure}
 
-Nótese que tanto las líneas de datos (SDA), como las líneas de reloj (SCL) de los sensores MPU-6050, se conectaron a una única línea SDA o SCL, respectivamente, hacia la Raspberry Pi. Para evitar problemas de sincronización, se eligió la misma frecuencia de reloj para ambos sensores. Nótese también que se alimentó al sensor a través de la entrada AD0, en vez de VCC. Esto permite que su dirección en el bus $I^2C$ cambie de 104 a 105. Todos los sensores se alimentaron a través de la salida de voltaje de 3,3 V de la Raspberry Pi.
+La línea SS del sensor MPU-9250 se conectó a la línea Chip Enable (CE) 1 de la Raspberry Pi. Nótese que tanto las líneas de datos (SDA), como las líneas de reloj (SCL) de los sensores MPU-6050, se conectaron a una única línea SDA o SCL, respectivamente, hacia la Raspberry Pi. Para evitar problemas de sincronización, se eligió la misma frecuencia de reloj para ambos sensores. Nótese también que se alimentó al sensor a través de la entrada AD0, en vez de VCC. Esto permite que su dirección en el bus $I^2C$ cambie de 104 a 105. Todos los sensores se alimentaron a través de la salida de voltaje de 3,3 V de la Raspberry Pi.
 
 En lo que resta del documento, cuando se haga referencia a los sensores MPU-6050 y MPU-9250 en conjunto, se utilizará el prefijo MPU; cuando se haga referencia solo a uno de ellos, se hará con su nombre completo.
 
@@ -69,6 +69,19 @@ Para que la calibración sea adecuada y se obtenga una medición confiable, el s
 	\label{fig:calibracion}
 \end{figure}
 
+<<<<<<< HEAD
+=======
+Se utilizó un patrón de arquitectura de segmentación de procesos (process pipeline), en el cual los datos obtenidos del DMP se colocan en un buffer interno del sensor de tipo FIFO (El primer dato que entra, es el último que sale), del cual se lee la orientación del sensor; esto permite que los datos de la orientación puedan ser procesados sin que existan errores debido a lecturas incompletas. Aunque no se indica explícitamente la estructura de datos interna del buffer, se puede representar como un buffer compartido, esto es, una cola circular. La Figura \ref{fig:buffer} muestra el buffer compartido. Puede notarse que se modela de tal manera que el proceso productor (el DMP) y el proceso consumidor (la lectura de datos del sensor) no accedan al mismo valor.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{buffer.png}
+	\caption{Representación del buffer interno del MPU como un buffer compartido}
+	\label{fig:buffer}
+\end{figure}
+
+\newpage
+>>>>>>> texstudio
 Posteriormente, se debe de cargar el firmware del procesador \cite{userguideMotionDriver}. Este proceso debe de realizarse cada vez que se encienda el sensor. Aunque no se indique explícitamente, el hecho de que el firmware deba de ser cargado cada vez que se inicie el sensor sugiere que la memoria que contiene el firmware del sensor es una memoria volátil. La memoria está formada por 8 bancos, en los que se carga el firmware proporcionado por InvenSense \cite{userguideMotionDriver}. 
 
 Después de esto, se habilita el DMP y el buffer FIFO escribiendo el valor 1 en el bit FIFO\_EN (Bit 6) del registro 106 indicado en la Figura \ref{fig:fifoen} para la lectura de datos.
