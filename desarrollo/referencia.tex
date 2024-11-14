@@ -2,22 +2,22 @@
 
 \subsubsection{Transmisión}
 
-Se implementó en C++ la funcionalidad para transmitir los datos entre la Raspberry Pi y el software SettDev. Dicho software se ejecuta en el sistema operativo Windows; para este trabajo, se ejecutó en la versión Windows 10. En la Figura se observa la interfaz de usuario de SettDev. Éste se compone por módulos; cada módulo es un componente que interactúa con una característica en particular del PLC.
+Se implementó en C++ y C\# la funcionalidad para transmitir los datos entre la Raspberry Pi y el software SettDev. Dicho software se ejecuta en el sistema operativo Windows; para este trabajo, se ejecutó en la versión Windows 10. En la Figura \ref{fig:settdev} se observa la interfaz de usuario de SettDev. Éste se compone por módulos; cada módulo es un componente que interactúa con una característica en particular del PLC que se controla desde el software. La interfaz que se muestra, es el módulo desarrollado por SEDPC para el proyecto; éste contiene un modelo en 3D de un brazo robótico, en el que las inclinaciones de cada una de sus articulaciones son modificadas por los controles deslizantes que se muestran en la parte superior del modelo. También incluye una cuadrícula donde varias líneas imitan el comportamiento del brazo robótico en 3D, en un plano. Además, cuenta con otro modelo de brazo robótico, en el que se puede ver el esquema en 3D de un brazo robótico imitar el mismo comportamiento del brazo robótico en 3D.
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[scale=0.5]{settdev.png}
-	\caption{Software SettDev desarrollado por SEDPC}
+	\includegraphics[scale=0.45]{settdev.png}
+	\caption{Módulo de Brazo Robótico desarrollado por SEDPC}
 	\label{fig:settdev}
 \end{figure}
 
 \subsubsection{Simulación}
 
-La empresa requirió que se utilizara un brazo robótico en 3D diseñado por la propia empresa, e incluido en el software SettDev, para ser empleado como referencia del movimiento realizado por la ortesis. La Figura \ref{fig:referencia} muestra el brazo en 3D diseñado por la propia empresa. Este modelo tiene 3 grados de libertad, y un grado de libertad adicional para el efector final (Muñeca). Puede notarse que en la parte superior hay controles deslizantes. La empresa requirió que estos controles se movieran de acuerdo con los ángulos obtenidos directamente de los sensores. Se asignó un sensor y eje fijos para un grado de libertad específico; el eje X y eje Z del sensor colocado en el codo controlan el movimiento de la base y el antebrazo, respectivamente, mientras que el eje Z del sensor colocado en el extremo de la ortesis controla el movimiento del antebrazo. El eje Y del sensor colocado en la mano controla el movimiento de la muñeca.
+La Figura \ref{fig:referencia} muestra en detalle el brazo en 3D. Este modelo tiene 3 grados de libertad, y un grado de libertad adicional para el efector final (Muñeca). Se asignó un sensor y eje fijos para un grado de libertad específico; el eje X y eje Z del sensor colocado en el codo controlan el movimiento de la base y el antebrazo, respectivamente, mientras que el eje Z del sensor colocado en el extremo de la ortesis controla el movimiento del antebrazo. El eje Y del sensor colocado en la mano controla el movimiento de la muñeca.
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[scale=0.6]{referencia.png}
-	\caption{Brazo en 3D utilizado como referencia en el software SettDev}
+	\caption{Modelo de brazo en 3D utilizado como referencia}
 	\label{fig:referencia}
 \end{figure}
