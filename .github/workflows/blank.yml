@@ -38,7 +38,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
         
-          git add tesina.pdf recursos/portada.png
+          git add .
           git commit -m "Compile & Render Document Action"
           git push origin master
         
