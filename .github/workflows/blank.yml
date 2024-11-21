@@ -40,5 +40,5 @@ jobs:
         
           git add .
           git commit -m "Compile & Render Document Action"
-          git push origin master
+          git push https://davidnicolas:${{ secrets.ACTION }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
         
