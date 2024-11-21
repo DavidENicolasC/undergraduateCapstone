@@ -32,6 +32,7 @@ jobs:
       - name: Convertir portada a imagen
         run: |
           pdftoppm -png tesina.pdf recursos/portada -f 1 -l 1
+          mv recursos/portada-01.png recursos/portada.png
 
       - name: Subir archivos generados
         run: |
