@@ -9,11 +9,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  compile_and_render:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout al repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias de LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
       - name: Compilar LaTeX a PDF
         uses: xu-cheng/latex-action@3.2.0
@@ -23,7 +29,7 @@ jobs:
       - name: Instalar pdftoppm (PDF a imagen)
         run: sudo apt-get install -y poppler-utils
 
-      - name: Convertir portada a PDF
+      - name: Convertir portada a imagen
         run: |
           pdftoppm -png tesina.pdf recursos/portada -f 1 -l 1
 
