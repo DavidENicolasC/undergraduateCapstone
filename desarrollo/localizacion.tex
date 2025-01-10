@@ -2,9 +2,10 @@
 
 La posición en $(x, y, z)$ del sensor en el extremo de la ortesis, será la posición que debe alcanzar el efector final del brazo robótico. Esta se mide con respecto al hombro, que tiene las coordenadas en el origen $(0, 0 ,0)$.
 
-Si $(\psi_{1}, \theta_{1}, \phi_{1})$ son los ángulos de inclinación obtenidos del sensor colocado en el codo de la ortesis, y $(\psi_{2}, \theta_{2}, \phi_{2})$ son los ángulos de inclinación obtenidos del sensor colocado en el extremo de la ortesis, las siguientes ecuaciones permiten calcular las coordenadas en el espacio del sensor en el extremo de la ortesis con respecto al hombro:
+Si $(\psi_{1}, \theta_{1}, \phi_{1})$ son los ángulos de inclinación obtenidos del sensor colocado en el codo de la ortesis, y $(\psi_{2}, \theta_{2}, \phi_{2})$ son los ángulos de inclinación obtenidos del sensor colocado en el extremo de la ortesis, las siguientes ecuaciones permiten calcular las coordenadas en el espacio del sensor en el extremo de la ortesis con respecto al hombro \cite{}:
 
 \begin{equation}
+	x = L_1 \cdot cos(\theta_{1}) 
 	x = L_1 \cdot \cos \theta_{x_1} +  L_2 \cdot \cos \theta_{x_2}
 	\label{eq:angulox}
 \end{equation}
