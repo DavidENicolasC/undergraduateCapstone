@@ -22,7 +22,16 @@ Nótese que tanto las líneas de datos (SDA), como las líneas de reloj (SCL) de
 
 \subsubsection{Calibración}
 
-Los sensores inerciales fabricados con tecnología MEMS, como los MPU, necesitan ser calibrados y tener un valor de referencia (offset) con el cual se corrija la orientación medida por el sensor \cite{offsetMPU}. El diagrama de la Figura \ref{fig:salidaMPU} obtenido del manual \cite{offsetMPU} muestra el proceso para obtener datos de los sensores MPU; los valores de referencia del acelerómetro y el giroscopio (Gyro and Accel Offset Registers) se aplican a las mediciones obtenidas por el giroscopio y el acelerómetro (Gyro and Accel MEMS), para corregir la mediciones y colocarlas en los registros del sensor (Gyro/Accel Output Registers). Luego, son procesadas por el Procesador de Movimiento Digital (DMP) y el resultado se almacena en un buffer FIFO interno.
+Los sensores MPU-6050 representan internamente los valores del giroscopio y acelerómetro que tienen incorporados por medio de un capacitor, en el que una de las placas, que rodea a la otra, está fija, mientras que la que se encuentra en el centro, puede desplazarse. La capacitancia entre las placas determina el voltaje de salida del sensor.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.8]{salidaMPU.png}
+	\caption{Lectura de datos de los sensores MPU}
+	\label{fig:salidaMPU}
+\end{figure}
+
+Los sensores inerciales fabricados con tecnología MEMS, como los MPU-6050, necesitan ser calibrados y tener un valor de referencia (offset) con el cual se corrija la orientación medida por el sensor \cite{offsetMPU}. El diagrama de la Figura \ref{fig:salidaMPU} obtenido del manual \cite{offsetMPU} muestra el proceso para obtener datos de los sensores MPU-6050; los valores de referencia del acelerómetro y el giroscopio (Gyro and Accel Offset Registers) se aplican a las mediciones obtenidas por el giroscopio y el acelerómetro (Gyro and Accel MEMS), para corregir la mediciones y colocarlas en los registros del sensor (Gyro/Accel Output Registers). Luego, son procesadas por el Procesador de Movimiento Digital (DMP) y el resultado se almacena en un buffer FIFO interno.
 
 \begin{figure}[htb]
 	\centering
