@@ -4,17 +4,17 @@ La posición en $(x, y, z)$ del sensor en el extremo de la ortesis, será la pos
 
 Si $(\psi_{1}, \theta_{1}, \phi_{1})$ son los ángulos de inclinación obtenidos del sensor colocado en el codo de la ortesis, y $(\psi_{2}, \theta_{2}, \phi_{2})$ son los ángulos de inclinación obtenidos del sensor colocado en el extremo de la ortesis, las siguientes ecuaciones permiten calcular las coordenadas en el espacio del sensor en el extremo de la ortesis con respecto al hombro \cite{mathworks2025}:
 
-\[
+\begin{equation}
 x_2 = L_1 \cos(\psi_1) \cos(\theta_1) + L_2 \cos(\psi_2) \cos(\theta_2)
-\]
+\end{equation}
 
-\[
+\begin{equation}
 y_2 = L_1 \sin(\psi_1) \cos(\theta_1) + L_2 \sin(\psi_2) \cos(\theta_2)
-\]
+\end{equation}
 
-\[
+\begin{equation}
 z_2 = L_1 \sin(\theta_1) + L_2 \sin(\theta_2)
-\]
+\end{equation}
 
 Donde $L_1$ es la distancia desde el hombro hasta el sensor colocado en el codo, y $L_2$ es la distancia desde el sensor colocado en el codo hasta el sensor colocado en el extremo de la ortesis.
 
