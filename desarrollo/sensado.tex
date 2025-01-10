@@ -65,7 +65,7 @@ Si el sensor se encuentra en estado de reposo (no existe ninguna fuerza externa 
 
 Para obtener dicho valor medio, se utilizó un control proporcional-integral (PI), en el cual se escribe el valor medido por el sensor en los registros de referencia (offset registers), y se compara dicho valor con la siguiente medición del sensor (con el último offset escrito en los registros de referencia aplicado a la nueva medición), para determinar el error; este proceso termina cuando el error obtenido se encuentra dentro del rango previamente establecido.
 
-La Figura \ref{fig:calibracion} muestra el proceso de calibración del sensor para cada eje, donde $X(kT)$  es la medición deseada en un tiempo $T$ para dicho eje del giroscopio y el acelerómetro, excepto el eje Z, por lo ya antes mencionado, y $Y(kT)$ es la salida de la medición en dicho eje en el mismo instante de tiempo después de aplicar el nuevo offset. El periodo de muestreo es de 2,5\mu s, de acuerdo con el manual \cite{offsetMPU}.
+La Figura \ref{fig:calibracion} muestra el proceso de calibración del sensor para cada eje, donde $X(kT)$  es la medición deseada en un tiempo $T$ para dicho eje del giroscopio y el acelerómetro, excepto el eje Z, por lo ya antes mencionado, y $Y(kT)$ es la salida de la medición en dicho eje en el mismo instante de tiempo después de aplicar el nuevo offset. El periodo de muestreo es de 2,5 s, de acuerdo con el manual \cite{offsetMPU}.
 
 Para que la calibración sea adecuada y se obtenga una medición confiable, el sensor debe de encontrarse en el estado de reposo mencionado anteriormente.
 
