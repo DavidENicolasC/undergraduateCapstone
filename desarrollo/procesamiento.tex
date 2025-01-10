@@ -4,7 +4,7 @@ Para generar el conjunto de datos de entrenamiento para la red se tomaron en cue
 
 El tipo de brazo robótico a controlar es de dos grados de libertad. Como lo que interesa es controlar la posición (y no la orientación), se restringió la cantidad de grados de libertad del brazo robótico a uno en cada unión; esto significa que en la unión de la base existe un grado de libertad, y el otro grado de libertad se encuentra en la unión entre la primera y la segunda articulación. 
 
-Los servomotores posicionales solo pueden moverse en ángulos discretos, en particular, enteros. Esto significa que pueden alcanzar 180 posiciones. Además, muchas posiciones finales son lo suficientemente cercanas entre sí como para considerar que se aproximan a la misma posición.  Para determinar la proximidad de las posiciones, se aplicó el siguiente criterio con distancia Euclidiana entre dos posiciones $P_1 = (x_1, y_1, z_1)$ y $P_2 = (x_2, y_2, z_2)$
+Los servomotores posicionales solo pueden moverse en ángulos discretos, en particular, enteros. Esto significa que pueden alcanzar 180 posiciones. Además, muchas posiciones finales son lo suficientemente cercanas entre sí como para considerar que se aproximan a la misma posición.  Para determinar la proximidad de las posiciones, se aplicó el siguiente criterio con distancia Euclidiana entre dos posiciones $P_1 = (x_1, y_1, z_1)$ y $P_2 = (x_2, y_2, z_2)$:
 
 \begin{equation}
 	d(P_1, P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} < 1
