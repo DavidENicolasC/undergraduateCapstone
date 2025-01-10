@@ -103,19 +103,19 @@ El cuaternión es de la forma:.
 
 Donde $a, b, c, d$ son las componentes del cuaternión que describe la rotación actual del sensor.
 
-El cuaternión se convirtió a ángulos de Tailt-Bryan, que describen la orientación en el espacio del sensor, mediante las siguientes ecuaciones:
+El cuaternión se convirtió a ángulos de Tailt-Bryan \cite{tailtbryan}, que describen la orientación en el espacio del sensor, mediante las siguientes ecuaciones:
 
 \begin{equation}
-	\psi = \arctan{\frac{2(ab + cd)}{a^2 - b^2 - c^2 + d^2}}
+	\psi = \arctan{\frac{2(ad + bc)}{1-2(x^2+y^2)}}
 	\label{eq:yaw}
 \end{equation}
 
 \begin{equation}
-	\theta = a + b\hat{i} + c\hat{j} + d\hat{k}
+	\theta = \arcsen{2(ac - bd)}
 	\label{eq:roll}
 \end{equation}
 
 \begin{equation}
-	\phi = a + b\hat{i} + c\hat{j} + d\hat{k}
+	\phi = \arctan{\frac{2(ab + cd)}{1-2(y^2+z^2)}
 	\label{eq:pitch}
 \end{equation}
