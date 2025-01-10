@@ -1,3 +1,7 @@
 \subsection{Procesamiento}
 
-Para generar el conjunto de datos de entrenamiento para la red se tomaron en cuenta ciertas restricciones 
+Para generar el conjunto de datos de entrenamiento para la red se tomaron en cuenta restricciones sobre el brazo robótico a controlar y los servomotores posicionales a los que se envían las instrucciones.
+
+El tipo de brazo robótico a controlar 
+
+Los servomotores posicionales solo pueden moverse en ángulos discretos, en particular, enteros. Esto significa que pueden alcanzar 180 posiciones. Además, muchas posiciones finales son lo suficientemente cercanas entre sí como para considerar que se aproximan a la misma posición. El brazo robótico tiene la base en el suelo; esto significa que se puede mover dentro y a lo largo de la mitad de una esfera con centro en la base del robot y de radio igual a la longitud del robot.  
