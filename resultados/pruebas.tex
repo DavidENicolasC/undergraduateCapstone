@@ -1,3 +1,12 @@
 \section{Pruebas}
 
-Para determinar cómo cambia la precisión del sistema en la generación de los grupos, se variaron los parámetros $L_1, L_2, \alpha_1, \alpha_2, \alpha_3$, para determinar la máxima y mínima distancia euclidiana obtenida, y así obtener la máxima imprecisión para una posición particular. Se variaron $L_1$ y $L_2$ entre 0.5 cm a 1 cm, y los saltos de $\alpha_1, \alpha_2, \alpha_3$ variaron en un factor desde 1 hasta 3. También se determinó la cantidad de clústeres generados, así como el tamaño máximo y mínimo de los clústeres generados.
+Se midió el tiempo total de ejecución de la clusterización, y se aplicó la métrica del error de posicionamiento euclidiano entre el punto $P(x_i, y_i, z_i)$ para determinar la máxima distancia Euclidiana (y por lo tanto, la imprecisión del sistema). Las pruebas se realizaron con los siguientes datos:
+
+\begin{itemize}
+	\item $L_1 = 7, L_2 = 8$
+	\item $L_1 = 10.5, L_2 = 12$
+	\item $L_1 = 18, L_2 = 20$
+\end{itemize}
+
+El equipo utilizado para generar la clusterización posee las siguientes características:
+
