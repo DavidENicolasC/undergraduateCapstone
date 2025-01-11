@@ -1,6 +1,6 @@
 \subsection{Procesamiento}
 
-Para generar el conjunto de datos de entrenamiento para la red se tomaron en cuenta restricciones sobre el brazo robótico a controlar y los servomotores posicionales a los que se envían las instrucciones.
+Se tomaron en cuenta restricciones sobre el brazo robótico a controlar y los servomotores posicionales a los que se envían las instrucciones.
 
 El tipo de brazo robótico a controlar tiene un diseño antropomórfico, lo que significa que se compone de articulaciones unidas entre sí; además es de dos grados de libertad, lo que implica que tiene exactamente dos articulaciones. Como lo que interesa es controlar la posición (y no la orientación), se restringió la cantidad de grados de libertad del brazo robótico a uno en cada unión; esto significa que en la unión de la base existe un grado de libertad, y el otro grado de libertad se encuentra en la unión entre la primera y la segunda articulación. Además, ambos grados de libertad se mueven de arriba hacia abajo. Para alcanzar todas las posiciones posibles en el espacio, existe un grado de libertad adicional en la base que rota el brazo robótico alrededor de su eje. La Figura \ref{fig:tipobrazo} muestra un ejemplo de un brazo robótico que cumple con estas restricciones.
 
@@ -29,7 +29,7 @@ Esto nos da las siguientes restricciones para generar el conjunto de datos de en
 	
 	\item $L_1, L_2 $
 	
-	\item Los ángulos de 
+	\item Los ángulos de inclinación $\alpha_1, alpha_2, alpha_3 \in \mathbb{Z}$ y van de 0° a 90°, excepto el de la base, que va de 0° a 360°.
 	
 	\item Implementar la comunicación entre la Raspberry Pi y el software SettDev por medio de sockets TCP en C++ y C\# para guardar y reproducir las instrucciones en la simulación en 3D de un brazo robótico.
 	
