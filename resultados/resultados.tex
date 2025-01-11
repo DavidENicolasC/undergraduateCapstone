@@ -4,16 +4,22 @@ Los resultados de la prueba descrita se muestran en la siguiente tabla.
 
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		\textbf{$L_1$} & \textbf{$L_2$} & \textbf{Tiempo total} & \textbf{Error máximo} \\
+		\textbf{$L_1$ (cm)} & \textbf{$L_2$ (cm)} & \textbf{Tiempo total (s)} & \textbf{Error máximo (cm)} & \textbf{Tamaño (MB)} \\
 		\hline
-		7 cm  & 8 cm  & 100 s & 0.66 cm \\
-		10.5 cm & 12 cm & 110 s & 0.65 cm \\
-		18 cm  & 21 cm & 120 s & 0.65 cm \\
+		7 & 8 & 100 & 0.66 & 3.08 \\
+		10.5 & 12 & 110 & 0.65 & 3.12 \\
+		18 & 21 & 120 & 0.65 & 3.17 \\
 		\hline
 	\end{tabular}
 	\caption{Resultados}
 \end{table}
 
-Se pudo notar que el tiempo de la clusterización es relativamente alto
+Se pudo notar que el tiempo de la clusterización es de alrededor de 2 minutos. Esto es por la cantidad de posturas generadas para determinar la más cercana a una posición en particular; si la base rota en 360°, y las articulaciones rotan 90°, entonces:
+
+\begin{equation}
+	360 \cdot 90 \cdot 90 = 2,916,000
+\end{equation}
+
+Lo que quiere decir que se generan 2,916,000 posturas. Esto es un valor relativamente alto, que puede ser reducido si se varían en ángulos de 2° en las articulaciones; por el enfoque que hemos dado al modelo, sabemos que la distancia de un punto con coordenadas enteras a otro es, por la distancia euclidiana, de 0.707 cm, de modo que la precisión no disminuye significativamente si disminuimos la cantidad de ángulos que pueden ser generados por cada articulación. Sin embargo, la cantidad de posiciones alcanzables puede verse reducida, debido a que alguna postura que 
