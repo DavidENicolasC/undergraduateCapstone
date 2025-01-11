@@ -1,5 +1,7 @@
 \subsection{Resultados}
 
+Se encontró que la cantidad total de posiciones alcanzables es de 163, 504.
+
 Los resultados de la prueba descrita se muestran en la siguiente tabla.
 
 \begin{table}[ht]
@@ -24,4 +26,4 @@ Se pudo notar que el tiempo de la clusterización es de alrededor de 2 minutos. 
 
 Lo que quiere decir que se generan 2,916,000 posturas. Esto es un valor relativamente alto, que puede ser reducido si se varían en ángulos de 2° en las articulaciones; por el enfoque que hemos dado al modelo, sabemos que la distancia de un punto con coordenadas enteras a otro es, por la distancia euclidiana, de 0.707 cm, de modo que la precisión no disminuye significativamente si disminuimos la cantidad de ángulos que pueden ser generados por cada articulación. Sin embargo, la cantidad de posiciones alcanzables puede verse reducida, debido a que algunas posiciones solo podrían ser alcanzadas por alguna postura en particular que no se consideró para la clusterización. Este valor aumentará exponencialmente conforme aumente la cantidad de grados de libertad.
 
-También puede notarse que el tamaño conjunto de los archivos de clusterización no crece exponencialmente al variar la longitud de los 
+También puede notarse que el tamaño conjunto de los archivos de clusterización no crece exponencialmente al variar la longitud de las articulaciones; se mantiene cercana a 3,2 MB, lo cual es un tamaño relativamente pequeño en comparación con el almacenamiento de la Raspberry Pi utilizado para este proyecto, de 16 GB. Si se aumentan los grados de libertad, cada archivo de clusterización guarda 1 byte más de información.
