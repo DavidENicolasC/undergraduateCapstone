@@ -37,7 +37,7 @@ Esto nos da las siguientes restricciones para generar el conjunto de datos:
 	
 \end{itemize}
 
-Con base en lo anterior se generaron los datos, de modo que cada posición alcanzable agrupara un conjunto de combinaciones de longitudes y ángulos de inclinación que permiten alcanzar dicha posición.
+Con base en lo anterior se generaron los datos, de modo que cada posición alcanzable se asociara con el conjunto de ángulos que generan la posición con menor distancia euclidiana al punto alcanzable.
 
 Una vez obtenidos los grupos, se almacenaron en archivos binarios de acuerdo con la posicion especifica. De este modo, cuando se ingrese una posición $P(x,y,z)$ con longitudes $L_1, L_2$, primero, se determina el punto más cercano $P_i(x_i,y_i,z_i)$ a $P(x,y,z)$ tal que $x_i,y_i,z_i \in \mathbb{Z}$ de los 8 puntos que rodean a $P(x,y,z)$, si se considera esta posición dentro de un cubo (las esquinas $P_i(x_i,y_i,z_i)$ son parte de los puntos como $P_1$ revisados antes); posteriormente, se busca en el archivo binario donde se guardaron las posiciones con la misma coordenada $x_i$. Al iterar dentro del archivo,  si las longitudes asociadas a esos ángulos no difieren en más de 1 cm con las longitudes de entrada (también se invierten las longitudes), se sustituyen los ángulos $\alpha_1, \alpha_2, \alpha_3$, en las siguientes ecuaciones obtenidas de las matrices de rotación del brazo robótico que determinan la posición real si se toman esos ángulos de inclinación.:
 
