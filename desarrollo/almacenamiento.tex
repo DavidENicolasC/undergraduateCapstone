@@ -1,21 +1,4 @@
 \newpage
 \subsection{Almacenamiento}
 
-Finalmente, los ángulos calculados por la red se almacenaron en un archivo. El formato para almacenar los archivos es el que muestra la Figura \ref{fig:formatoarchivo}.
-
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=0.6]{formatoarchivo.png}
-	\caption{Formato del archivo que guarda los datos de movimiento}
-	\label{fig:formatoarchivo}
-\end{figure}
-
-El contenido del archivo se describe como sigue:
-
-\begin{enumerate}
-	\item El primer byte guarda la cantidad $k$ de ángulos de cinemática inversa calculados para el robot con $k$ grados de libertad
-	%\item Los siguientes $k$ bytes almacenan los ángulos de inclinación de la postura inicial del robot. Esta no necesariamente debe de corresponder con la postura inicial del brazo del operador, ya que lo que se controla en el brazo robótico, es el desplazamiento desde la posición inicial.
-	\item El resto del contenido del archivo son los ángulos calculados para el problema de la cinemática inversa.
-\end{enumerate}
-
-De acuerdo con el mapa de registros \cite{registermap}, el tamaño del registro interno en los MPU que almacena el ángulo de inclinación es de 2 bytes. Esto quiere decir que, si se utilizan 6 bytes para almacenar la orientación de un sensor MPU (dos por cada eje), el archivo aumenta en 18 bytes de información por cada instante en el que se mida la inclinación del dispositivo.
+Finalmente, los ángulos calculados por la red se almacenaron en un archivo. Debido a los rangos de las longitudes $L_1, L_2$ y los ángulos de inclinación, $alpha_1, alpha_2, alpha_3$, se almacenó cada valor en 2 bytes.
