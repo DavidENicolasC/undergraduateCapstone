@@ -17,6 +17,6 @@ Los servomotores posicionales solo pueden moverse en ángulos discretos, en part
 	d(P_1, P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} <= \frac{\sqrt{2}}{2} \approx 0.707
 \end{equation}
 
-De este modo, se considera que aquellos puntos que tienen a lo más 0,707 cm de distancia euclidiana entre ellos llegan a la misma posición. Para el caso en el que una de las coordenadas del punto $P_2$ sea entera, su distancia euclidiana a algún punto $P_1$ será menor que o igual a 0,5 cm.
+De este modo, se considera que aquellos puntos que tienen a lo más 0,707 cm de distancia euclidiana entre ellos llegan a la misma posición. Para el caso en el que una de las coordenadas del punto $P_2$ sea entera, su distancia euclidiana a algún punto $P_1$ será menor que o igual a 0,5 cm, de modo que el criterio se reducirá a ese valor.
 
 El brazo robótico tiene la base en el suelo; esto significa que se puede mover dentro y a lo largo de la mitad de una esfera con centro en la base del robot y de radio igual a la longitud del robot. Consideremos que las posiciones alcanzables son como el punto $P_1$ antes descrito; esto significa que el volumen de la semiesfera donde se puede mover el brazo robótico se divide en cubos contiguos de 1 cm de lado, donde cada 
