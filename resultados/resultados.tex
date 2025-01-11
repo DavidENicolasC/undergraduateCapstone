@@ -1,4 +1,4 @@
-\subsection{Resultados}
+\section{Resultados}
 
 Los resultados de la prueba descrita se muestran en la tabla \ref{tab:Resultados}.
 
@@ -36,3 +36,12 @@ Donde n es la cantidad de grados de libertad.
 También puede notarse que el tamaño conjunto de los archivos de clusterización no crece exponencialmente al variar la longitud de las articulaciones; se mantiene cercana a 3,2 MB, lo cual es un tamaño relativamente pequeño en comparación con el almacenamiento de la Raspberry Pi utilizado para este proyecto, de 16 GB. Si se aumentan los grados de libertad, cada archivo de clusterización guarda 1 byte más de información.
 
 Un resultado a destacar es que el sistema requiere un tiempo constante de ejecución para determinar la cinemática inversa; cuando se tiene un punto $P(x,y,z)$ de entrada, se toman los 8 puntos vecinos y se determina el más cercano, y luego se toman los ángulos del archivo correspondiente a esa posición, lo que implica una lectura de 4 bytes. Si se ignoran las operaciones de lectura de los datos, que se ejecutan en un tiempo mayor que si se leyeran de la memoria RAM, existen a lo más 12 operaciones para determinar la cinemática inversa, lo que demuestra que el sistema tiene un tiempo de respuesta muy rápido, de acuerdo con la capacidad de la Raspberry Pi.
+
+El brazo de prueba a ser controlado se muestra en la Figura
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{settdev.png}
+	\caption{Brazo robótico proporcionado por SEDPC para la demostración}
+	\label{fig:settdev}
+\end{figure}
