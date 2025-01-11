@@ -29,22 +29,22 @@ Esto nos da las siguientes restricciones para generar el conjunto de datos:
 	
 	\item $\alpha_1, \alpha_2, \alpha_3 \in \mathbb{Z}$; El ángulo de la base es $ 0 \leq \alpha_1 \leq 360$, mientras que los ángulos de inclinación de las articulaciones son $ 0 \leq \alpha_2, \alpha_3 \leq 90$
 	
-	\item Las posiciones alcanzables $P = (x, y, z)$ son tales que $x,y,z \ in \mathbb{Z}$, y se asocian con un conjunto de ángulos $\alpha_1, \alpha_2, \alpha_3$ que, al ser aplicados para obtener una posición final $P_f(x_f,y_f,z_f)$, sea el punto con menor distancia euclidiana al punto $P$
+	\item Las posiciones alcanzables $P = (x, y, z)$ son tales que $x,y,z \ in \mathbb{Z}$, y se asocian con un conjunto de ángulos $\alpha_1, \alpha_2, \alpha_3$ que, al ser aplicados para obtener una posición final $P_f(x_f,y_f,z_f)$, sea el punto con menor distancia euclidiana al punto $P$. La posición $P_f$ se indica con las siguientes ecuaciones, derivada de la matriz de rotacion del brazo robótico:
 	
 \end{itemize}
-
-Una vez obtenidos los grupos, se almacenaron en archivos binarios de acuerdo con la posicion especifica. De este modo, cuando se ingrese una posición $P(x,y,z)$ con longitudes $L_1, L_2$, primero, se determina el punto más cercano $P_i(x_i,y_i,z_i)$ a $P(x,y,z)$ tal que $x_i,y_i,z_i \in \mathbb{Z}$ de los 8 puntos que rodean a $P(x,y,z)$, si se considera esta posición dentro de un cubo (las esquinas $P_i(x_i,y_i,z_i)$ son parte de los puntos como $P_1$ revisados antes); posteriormente, se busca el archivo binario que corresponde con dicha posición; si no existe, quiere decir que el brazo no puede llegar a dicha posición. De lo contrario, donde se guardaron las posiciones con la misma coordenada $x_i$. Al iterar dentro del archivo,  si las longitudes asociadas a esos ángulos no difieren en más de 1 cm con las longitudes de entrada (también se invierten las longitudes), se sustituyen los ángulos $\alpha_1, \alpha_2, \alpha_3$, en las siguientes ecuaciones obtenidas de las matrices de rotación del brazo robótico que determinan la posición real si se toman esos ángulos de inclinación.:
 
 \begin{equation}
 	x = L_1 \cdot \cos(\alpha_2) \cdot \cos(\alpha_1) + L_2 \cdot \cos(\alpha_2 + \alpha_3) \cdot \cos(\alpha_1)
 \end{equation}
-	
+
 \begin{equation}
 	y = L_1 \cdot \cos(\alpha_2) \cdot \sin(\alpha_1) + L_2 \cdot \cos(\alpha_2 + \alpha_3) \cdot \sin(\alpha_1)
 \end{equation}
-	
+
 \begin{equation}
 	z = L_1 \cdot \sin(\alpha_2) + L_2 \cdot \sin(\alpha_2 + \alpha_3) \cdot \cos(\alpha_1)
 \end{equation}
+
+Una vez obtenidos los grupos, se almacenaron en archivos binarios de acuerdo con la posicion especifica. De este modo, cuando se ingrese una posición $P(x,y,z)$ con longitudes $L_1, L_2$, primero, se determina el punto más cercano $P_i(x_i,y_i,z_i)$ a $P(x,y,z)$ tal que $x_i,y_i,z_i \in \mathbb{Z}$ de los 8 puntos que rodean a $P(x,y,z)$, si se considera esta posición dentro de un cubo (las esquinas $P_i(x_i,y_i,z_i)$ son parte de los puntos como $P_1$ revisados antes); posteriormente, se busca el archivo binario que corresponde con dicha posición; si no existe, quiere decir que el brazo no puede llegar a dicha posición. De lo contrario, toma los ángulos guardados en el archivo, donde se guardaron las posiciones con la misma coordenada $x_i$. Al iterar dentro del archivo,  si las longitudes asociadas a esos ángulos no difieren en más de 1 cm con las longitudes de entrada (también se invierten las longitudes), se sustituyen los ángulos $\alpha_1, \alpha_2, \alpha_3$, en las siguientes ecuaciones obtenidas de las matrices de rotación del brazo robótico que determinan la posición real si se toman esos ángulos de inclinación.:
 
 Y se determina la distancia euclidiana de la posición obtenida con la posición $P(x,y,z)$ de entrada. La combinación de ángulos $\alpha_1, \alpha_2, \alpha_3$ que tenga la menor distancia euclidiana, se toma como la salida de la etapa de Procesamiento.
