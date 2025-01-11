@@ -21,15 +21,11 @@ De este modo, se considera que aquellos puntos que tienen a lo más 0,707 cm de 
 
 Podemos notar que muchas posiciones pueden ser alcanzadas por un brazo robótico de una determinada longitud de articulaciones con más de una combinación de ángulos; por ejemplo, si la base tiene 0°, y ambas articulaciones tienen 90° y 0°, respectivamente, se alcanza la misma posición que si la base tiene 180°, y ambas articulaciones tienen 90° y 180°, respectivamente. En particular, si colocamos un plano paralelo al diámetro de la semiesfera que la atraviese, podemos notar las configuraciones ``espejo'' que alcanzan la misma posición. De modo que se restringió el rango de movilidad de las articulaciones de 0 a 90° para reducir aún más el espacio de búsqueda; la base se mantuvo de 0 a 360°. 
 
-Si consideramos además que las longitudes de los brazos varían, esto significa que cada punto $P_1$ puede ser alcanzado por varias combinaciones distintas de longitudes de articulaciones y ángulos. Esto se aprovechó para reducir la cantidad de operaciones realizadas para determinar la cinemática inversa; dada una posición $P = (x,y,z)$ con las características de $P_1$, existe un conjunto de combinaciones de longitudes de articulaciones y ángulos de inclinación que alcanzan dicha posición (aplicando el criterio de la distancia euclidiana). Se consideró que estaban asociadas a dicha posición. Las longitudes $L_1$ y $L_2$ de las articulaciones se redondearon a valores enteros, considerando el criterio de que dos longitudes cuya diferencia es a lo más de 0.5 cm se acercan a posiciones muy próximas entre sí utilizando los mismos ángulos.
-
-Tomemos dos lados de un rectángulo de lados $a,b$ tal que $a \neq b$. Si tomamos una de las esquinas como la base del robot y el otro extremo como la posición del efector final, e intercambiamos los lados manteniendo los ángulos de inclinación correspondientes a cada longitud, podemos notar que también llegan a la misma posición; esto quiere decir que, para evitar repetir la misma configuración, $L1$ no debe de pasar más allá de $L_2$.
+Si consideramos además que las longitudes de los brazos varían, esto significa que cada punto $P_1$ puede ser alcanzado por varias combinaciones distintas de longitudes de articulaciones y ángulos. Esto se aprovechó para reducir la cantidad de operaciones realizadas para determinar la cinemática inversa; dada una posición $P = (x,y,z)$ con las características de $P_1$, existe un conjunto de combinaciones de longitudes de articulaciones y ángulos de inclinación que alcanzan dicha posición (aplicando el criterio de la distancia euclidiana). Se consideró que estaban asociadas a dicha posición.
 
 Esto nos da las siguientes restricciones para generar el conjunto de datos:
 
-\begin{itemize}
-	
-	\item $ 1 \leq L_1, L_2 \leq 41; L_1, L_2 \in \mathbb{N}; L_1 \leq L2$ 
+\begin{itemize} 
 	
 	\item $\alpha_1, \alpha_2, \alpha_3 \in \mathbb{Z}$; El ángulo de la base es $ 0 \leq \alpha_1 \leq 360$, mientras que los ángulos de inclinación de las articulaciones son $ 0 \leq \alpha_2, \alpha_3 \leq 90$
 	
