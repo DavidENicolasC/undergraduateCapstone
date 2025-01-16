@@ -2,7 +2,7 @@
 
 \subsubsection{Transmisión}
 
-Se implementó en C++ y C\# la funcionalidad para transmitir los datos entre la Raspberry Pi y el software SettDev, que se ejecuta en el sistema operativo Windows; para este trabajo, se ejecutó en su versión 21.3 para Windows 10. Para la comunicación, se utilizó una trama TCP, cuya carga útil se muestra en la Figura \ref{fig:tramatcp}. Se utilizan dos bytes para el ángulo de la base, y un byte para cada ángulo de los eslabones, siendo 4 bytes en total.
+Se implementó en C++ y C\# la funcionalidad para transmitir los datos entre la Raspberry Pi y el software SettDev, que se ejecuta en el sistema operativo Windows; para este trabajo, se ejecutó en su versión 21.3 para Windows 10. Para la comunicación, se utilizó una trama TCP, cuya carga útil se muestra en la Figura \ref{fig:tramatcp}. Se utilizan dos bytes para el ángulo de la base, y un byte para cada ángulo de los eslabones, siendo 4 bytes en total. La Raspberry posee una dirección IPv4 estática; esta se utiliza para comprobar desde el software SettDev que los datos que recibe en el socket servidor son de una dirección IP válida.
 
 \begin{figure}[htb]
 	\centering
