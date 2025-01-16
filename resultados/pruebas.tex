@@ -1,14 +1,10 @@
 \section{Pruebas}
 
-Para medir la precisión del sistema, se aplicó la métrica del error de posicionamiento euclidiano de la norma NMX-J-752-2-ANCE-2020 para determinar la máxima distancia Euclidiana entre la pose asociada a alguna determinada posición alcanzable, y de este modo el error de posicionamiento del sistema. La distancia euclidiana entre la posición final de dos poses que varían en solo un grado en uno de sus ángulos de rotación (Como $(\alpha_1,\alpha_2,\alpha_3)$ y $(\alpha_1 + 1, \alpha_2, \alpha_3)$), aumenta de forma directamente proporcional a la longitud de los eslabones, de acuerdo con la ecuación de la distancia de la cuerda:
+Para medir la precisión del sistema, se aplicó la métrica de la desviación de la posición final de la norma ISO 9283:1998, que calcula la distancia euclidiana entre la posición deseada y la posición alcanzada.
 
-\begin{equation}
-	d_{cuerda} = 2 \cdot L \cdot \sin(\frac{\pi}{360}) = 0,017 \cdot L
-\end{equation}
+Para medir la calidad del software, se aplicó la norma ISO 9126. Esta se compone por 7 criterios: Funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad, portabilidad. 
 
-Donde $L$ es la longitud del eslabón.
-
-Se determinó la complejidad del algoritmo de clusterización, así como el de ejecución del sistema. Asimismo, se midió el tiempo promedio de la generación de la clusterización para 20 pruebas. El equipo utilizado para generar la clusterización posee las siguientes características:
+El equipo utilizado para generar la clusterización posee las siguientes características:
 
 \begin{itemize}
 	\item Procesador Intel Core i5 de 2,4 GHz de 4 núcleos
@@ -16,4 +12,3 @@ Se determinó la complejidad del algoritmo de clusterización, así como el de e
 	\item 256 GB de SSD
 	\item Sistema operativo Windows 10
 \end{itemize}
-
