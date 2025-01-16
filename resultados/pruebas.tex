@@ -1,12 +1,12 @@
 \section{Pruebas}
 
-Se aplicó la métrica del error de posicionamiento euclidiano para determinar la máxima distancia Euclidiana entre las poses asociadas a una posición alcanzable. La distancia euclidiana entre la posición final de dos poses que varían en solo un grado en uno de sus ángulos de rotación (Como $(\alpha_1,\alpha_2,\alpha_3)$ y $(\alpha_1 + 1, \alpha_2, \alpha_3)$), aumenta de forma directamente proporcional a la longitud de los eslabones, de acuerdo con la distancia de la cuerda:
+Se aplicó la métrica del error de posicionamiento euclidiano para determinar la máxima distancia Euclidiana entre las poses asociadas a una posición alcanzable. La distancia euclidiana entre la posición final de dos poses que varían en solo un grado en uno de sus ángulos de rotación (Como $(\alpha_1,\alpha_2,\alpha_3)$ y $(\alpha_1 + 1, \alpha_2, \alpha_3)$), aumenta de forma directamente proporcional a la longitud de los eslabones, de acuerdo con la ecuación de la distancia de la cuerda:
 
 \begin{equation}
 	d_{cuerda} = 2 \cdot L \cdot \sin(\frac{\pi}{360}) = 0,017 \cdot L
 \end{equation}
 
-Donde $L$ es la longitud del eslabón. Para la maxima longitud $L = 21$ cm, $d_cuerda = 0,017 \cdot 21 = 0,36$ cm.
+Donde $L$ es la longitud del eslabón. Para la maxima longitud $L = 21$ cm, $d_{cuerda} = 0,017 \cdot 21 = 0,36$ cm.
 
 El equipo utilizado para generar la clusterización posee las siguientes características:
 
