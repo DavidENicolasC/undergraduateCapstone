@@ -59,7 +59,7 @@ La Figura \ref{fig:ejes} muestra los ejes de desplazamiento y la rotación de lo
 	\label{fig:ejes}
 \end{figure}
 
-Se eligieron los valores de referencia de modo que la salida del sensor en el inicio del proceso de medir la orientación fuera $X=0, Y=0, Z=0$ para el giroscopio y $X=0, Y=0, Z=-9.8$ para el acelerómetro, debido a la constante de la aceleración de la gravedad g = -9.8  $m/s^2$. De acuerdo con lo anterior, al procesar los datos por el DMP, la salida deseada en el inicio del proceso de medir la orientación sería $\theta_x = 0°,\theta_y = 0°,\theta_z = 0°$.
+Se eligieron los valores de referencia de modo que la salida del sensor en el inicio del proceso de medir la orientación fuera $X=0, Y=0, Z=0$ para el giroscopio y $X=0, Y=0, Z=-9.8$ para el acelerómetro, debido a la constante de la aceleración de la gravedad $g = -9.8 \, m/s^2$. De acuerdo con lo anterior, al procesar los datos por el DMP, la salida deseada en el inicio del proceso de medir la orientación sería $\theta_x = 0^\circ, \theta_y = 0^\circ, \theta_z = 0^\circ$.
 
 Si el sensor se encuentra en estado de reposo (no existe ninguna fuerza externa que lo mueva), se espera que al leer datos de él, los valores no cambien; en la práctica, estos valores pueden variar debido a interferencias como el ruido externo. De modo que se calcula un valor medio cuyo error (la diferencia entre la medición del sensor en estado de reposo y el valor medio) sea menor que un error máximo aceptable; con base en el manual \cite{offsetMPU}, se eligió un error máximo de 0.1 $\degree/s$ para el giroscopio, y 0.1 $m/s$ para el acelerómetro.
 
